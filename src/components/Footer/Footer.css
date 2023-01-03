@@ -1,0 +1,20 @@
+.footerSection{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(234 234 234);
+    display: flex;
+}
+.footerSection .logoSection{
+    width: 60%;
+    height: inherit;
+}
+.footerSection .contactSection{
+    width: 40%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footerSection .contactSection div{
+    width: 22rem;
+}

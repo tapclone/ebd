@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Acumin';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../src/fonts/FontsFree-Net-Acumin-Pro-Book.ttf');
+    }
+body{
+    font-family: 'Acumin';
+}
