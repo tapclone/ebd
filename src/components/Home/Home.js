@@ -3,35 +3,38 @@ import Footer from '../Footer/Footer'
 import EnquiryForm from './EnquiryForm'
 import Header from './Header'
 import './Home.css'
-import compas from '../Home/assets/compas.png'
-import group from '../Home/assets/group.png'
-import compas2 from '../Home/assets/compas2.png'
-import protactor from '../Home/assets/protactor.png'
-import scale1 from '../Home/assets/scale1.png'
-import scale2 from '../Home/assets/scale2.png'
-
+import compas from '../../assets/compas.png'
+import group from '../../assets/group.png'
+import compas2 from '../../assets/compas2.png'
+import protactor from '../../assets/protactor.png'
+import scale1 from '../../assets/scale1.png'
+import scale2 from '../../assets/scale2.png'
 
 
 function Home() {
   return (
     <div>
       <Header></Header>
-      <section style={{ textAlign: 'center',width:"100%",height:'60vh'}}>
-        <img style={{ width:'53rem'}} src={group} alt="" />
+      <section className='groupSection' >
+        <img style={{ width:'70%'}} src={group} alt="" />
       </section>
 
 
-      <section style={{display:'flex',alignItems:'center',justifyContent:'center',position:'relative',height:'90vh'}}>
+      <section style={{width:'100%',display:'flex',justifyContent:'center',alignItems:'center',marginTop:'4rem'}}>
+        <div className='dividerSection'> 
 
-        <img style={{width:'20rem',position:'absolute',top:'3.5rem',left:'15rem'}} src={compas} alt="" />
-        <div style={{maxWidth:'20rem',marginLeft:'15rem',marginTop:'3rem'}}>
-          <h1 style={{margin:'0',fontWeight:'lighter',color:'#0E8B8F'}}>Accurate <br /> Dimension Transfer</h1> <br />
+        <img src={compas} alt="" />
+
+        <div className='dividerContent'>
+        <h1 style={{margin:'0',fontWeight:'lighter',color:'#0E8B8F'}}>Accurate <br /> Dimension Transfer</h1> <br />
           <div style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p >Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
-      </section>
 
+        </div>
+
+      </section>
 
       <section style={{display:'flex',alignItems:'start',justifyContent:'center',position:'relative',height:'90vh'}}>
         <div style={{maxWidth:'20rem',marginRight:'5rem',marginTop:'8rem'}}>

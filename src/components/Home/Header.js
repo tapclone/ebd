@@ -1,14 +1,25 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 import './Home.css'
-import logo from '../Home/assets/logo.svg'
-import whatsapp from '../Home/assets/whatsapp.svg'
-import instagram from '../Home/assets/instagram.svg'
-import facebook from '../Home/assets/facebook.svg'
-import behance from '../Home/assets/behance.svg'
+import logo from '../../assets/logo.svg'
+import whatsapp from '../../assets/whatsapp.svg'
+import instagram from '../../assets/instagram.svg'
+import facebook from '../../assets/facebook.svg'
+import behance from '../../assets/behance.svg'
 
 function Header() {
-    const navigate = useNavigate()
+
+    
+    // var selector=document.querySelectorAll('.nav')
+    // selector.forEach(element=>{
+    //     element.addEventListener('click',()=>{
+    //         console.log('hey');
+    //         selector.forEach(elem=>elem.classList.remove('activeNavLink'))
+    //         this.classList.add('activeNavLink')
+    //     })
+    // })
+    
+
     return (
         <div>
             <div className='logoSection' style={{ textAlign: 'center' }}>
@@ -18,11 +29,11 @@ function Header() {
             <div className="navSection">
 
                 <div className="navLinks">
-                    <span onClick={() => navigate('/')}>Home &nbsp;.</span>
-                    <span onClick={() => navigate('/about')}>About Us&nbsp;.</span>
-                    <span onClick={() => navigate('/projects')}>Our Projects &nbsp;.</span>
-                    <span onClick={() => navigate('/blogs')}>Blogs &nbsp;.</span>
-                    <span onClick={() => navigate('/contact')}>Contact Us &nbsp;.</span>
+                    <span ><NavLink to='/'> HOME &nbsp;.</NavLink></span>
+                    <span><NavLink to='/about' > ABOUT US &nbsp;.</NavLink></span>
+                    <span ><NavLink to='/projects'> OUR PROJECTS &nbsp;.</NavLink></span>
+                    <span ><NavLink to='/blogs'> BLOGS &nbsp;.</NavLink></span>
+                    <span ><NavLink to='/contact'> CONTACT US &nbsp;.</NavLink></span>
                 </div>
                 <div className="socialMediaSection" >
                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="60 90 96 50">
