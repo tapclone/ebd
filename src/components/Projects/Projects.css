@@ -19,3 +19,63 @@
 .card2 p{
     color: #0E8B8F;
 }
+.imageSection{
+    background: url(../../assets/Asset\ 4@300.png);
+    width: 65%;
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4%;
+}
+.scrollSectionSingleProject{
+    background-color: #0E8B8F;
+    width: 65%;
+    height: 35vh;
+    margin-bottom: 5%;
+    margin-top: -30px;
+    mix-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scrollSectionSingleProject div{
+    width: 100%;
+}
+.scrollSectionSingleProject img{
+    border: 5px solid white;
+    width: 80%;
+    
+}
+.detailsSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+}
+.detailsSection div{
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 5px;
+}
+.colmn-2 span{
+    font-weight: 600;
+    color: rgb(82, 81, 81);
+}
+.Image-360Section{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.Image-360Section img{
+    position: absolute;
+    width: 50%;
+    top: 0;
+    align-self: center;
+    justify-content: center;
+    
+
+}

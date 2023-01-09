@@ -108,6 +108,7 @@
     width: 50%;
     display: flex;
     align-items: center;
+    margin-top: 10%;
     justify-content: center;
 }
 .dividerSection img{
@@ -119,4 +120,68 @@
     width: 48%;
     height: fit-content;
     margin-left: -20px;
+}
+.compasSection{
+    width: 60%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.compasSection img{
+    width: 50%;
+    margin-left: 40%;
+}
+.compasContent{
+    width: 40%;
+    height: fit-content;
+    margin-left: -20%;
+    position: absolute;
+}
+.protactorSection{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.protactorSection img{
+    width: 55%;
+}
+.protactorContent{
+    width: 35%;
+    margin-left: 7%;
+}
+.scale1Section{
+    margin-top: 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.scale1Section img{
+    width: 55%;
+    margin-left: 45%;
+}
+.scale1Content{
+    width: 30%;
+    margin-left: -25%;
+    top: 7px;
+    position: absolute;
+}
+.scale2Section{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scale2Section img{
+    width: 68%;
+    margin-top: 20%;
+}
+.scale2Content{
+    width: 32%;
+    margin-left: -10%;
 }

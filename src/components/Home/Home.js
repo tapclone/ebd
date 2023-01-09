@@ -20,7 +20,7 @@ function Home() {
       </section>
 
 
-      <section style={{width:'100%',display:'flex',justifyContent:'center',alignItems:'center',marginTop:'4rem'}}>
+      <section style={{width:'100%',display:'flex',justifyContent:'center',alignItems:'center'}}>
         <div className='dividerSection'> 
 
         <img src={compas} alt="" />
@@ -36,44 +36,55 @@ function Home() {
 
       </section>
 
-      <section style={{display:'flex',alignItems:'start',justifyContent:'center',position:'relative',height:'90vh'}}>
-        <div style={{maxWidth:'20rem',marginRight:'5rem',marginTop:'8rem'}}>
-         <h1 style={{ color: '#0E8B8F', fontWeight: 'lighter', margin: '0' }}>Inscribing shapes <br /> and arcs</h1> <br />
-         <div style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
-          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        <img style={{width:'24rem',position:'absolute',top:'0',right:'14rem'}} src={compas2} alt="" />
-      </section>
-
-
-      <section style={{ display: 'flex', justifyContent: 'end', alignItems: 'center',position:'relative',height:'65vh'}}>
-
-        <img style={{width:'30rem',position:'absolute',left:'10rem',top:'3rem'}}  src={protactor} alt="" />
-        <div style={{ maxWidth: '20rem',marginRight:"10rem"}}>
-          <h1 style={{ color: '#0E8B8F', fontWeight: 'lighter', margin: '0' }}>Perfect angles <br />and measures</h1> <br />
+      <section style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+        <div className='compasSection'>
+        <div className='compasContent'>
+        <h1 style={{margin:'0',fontWeight:'lighter',color:'#0E8B8F'}}>Inscribing shapes <br /> and arcs</h1> <br />
           <div style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p >Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
+          <img src={compas2} alt="" />
+        </div>
+        
       </section>
 
-      <section style={{display:'flex',alignItems:'start',justifyContent:'center',position:'relative',height:'60vh',marginTop:'5rem'}}>
-        <div style={{maxWidth:'20rem',marginRight:'15rem'}}>
-         <h1 style={{ color: '#0E8B8F', fontWeight: 'lighter', margin: '0' }}>Providing a<br />straightedge</h1> <br />
-         <div style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
-          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        <img style={{width:'33rem',position:'absolute',top:'1rem',right:'5rem'}} src={scale1} alt="" />
-      </section>
 
-      <section style={{ display: 'flex', justifyContent: 'end', alignItems: 'center',position:'relative',height:'90vh'}}>
-
-        <img style={{width:'40rem',position:'absolute',left:'8rem',top:'14rem'}}  src={scale2} alt="" />
-        <div style={{ maxWidth: '20rem',marginRight:"10rem"}}>
-          <h1 style={{ color: '#0E8B8F', fontWeight: 'lighter', margin: '0' }}>Perfect angles <br />and measures</h1> <br />
+      <section style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+        <div className='protactorSection'>
+          <img src={protactor} alt="" />
+          <div className='protactorContent'>
+          <h1 style={{margin:'0',fontWeight:'lighter',color:'#0E8B8F'}}>Perfect angles <br /> and measures</h1> <br />
           <div style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p >Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        </div>
+
+      </section>
+
+      <section style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+        <div className='scale1Section'>
+        <div className='scale1Content'>
+        <h1 style={{margin:'0',fontWeight:'lighter',color:'#0E8B8F'}}>Providing a<br />straightedge</h1> <br />
+          <div style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
+
+          <p >Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+          <img src={scale1} alt="" />
+        </div>
+        
+      </section>
+
+      <section style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+        <div className='scale2Section'>
+          <img src={scale2} alt="" />
+          <div className='scale2Content'>
+          <h1 style={{margin:'0',fontWeight:'lighter',color:'#0E8B8F'}}>Planar angle<br />to a baseline</h1> <br />
+          <div style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
+
+          <p >Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery.</p>
+        </div>
         </div>
       </section>
 
