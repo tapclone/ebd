@@ -6,6 +6,7 @@ import image from '../../assets/Asset 4@300.png'
 import image2 from '../../assets/Asset 5@300.png'
 
 
+
 function SingleProject() {
     return (
         <div>
@@ -34,16 +35,6 @@ function SingleProject() {
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
                  </div>
                 <div className='imageSection'>
-
-                </div>
-                <div className='scrollSectionSingleProject'>
-                    <div style={{width:'80%',display:'grid',gridTemplateColumns:'auto auto auto auto'}}>
-                    <div><img src={image2} alt="" /></div>
-                    <div><img src={image2} alt="" /></div>
-                    <div><img src={image2} alt="" /></div>
-                    <div><img src={image2} alt="" /></div>
-                    </div>
-                    
 
                 </div>
 

@@ -4,6 +4,7 @@ import EnquiryForm from '../Home/EnquiryForm'
 import Header from '../Home/Header'
 import group from '../../assets/group.png'
 import avatar from '../../assets/Asset 1@300.png'
+import './About.css'
 
 function About() {
   return (
@@ -34,7 +35,7 @@ function About() {
       
       <div style={{display:'flex',width:'100%',marginTop:'3rem'}}>
         <div style={{display:'flex',flexDirection:'column',alignItems:'start',justifyContent:'center',textAlign:'center',width:'30%'}}>
-          <img  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
+          <img className='avatar' style={{width:'10rem',borderRadius:'90px'}} src={avatar} alt="" />
           <div style={{textAlign:'center'}}>
             <p style={{marginBottom:'0',color:'#0E8B8F'}}>MUHAMMAD SHIBILI</p>
             <p style={{marginTop:'0'}}>Managing Director</p>
@@ -58,7 +59,7 @@ function About() {
           <p style={{textAlign:'justify'}}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
         <div style={{display:'flex',flexDirection:'column',alignItems:'end',justifyContent:'center',textAlign:'center',width:'30%'}}>
-          <img  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
+          <img className='avatar'  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
           <div style={{textAlign:'center'}}>
             <p style={{marginBottom:'0',color:'#0E8B8F'}}>MUHAMMAD SHIBILI</p>
             <p style={{marginTop:'0'}}>Managing Director</p>
@@ -80,7 +81,7 @@ function About() {
         <div style={{display:'grid',gridTemplateColumns:'auto auto auto',columnGap:'6rem',marginTop:'2rem'}}>
 
         <div style={{display:'flex',flexDirection:'column',alignItems:'start',justifyContent:'center',textAlign:'center'}}>
-          <img  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
+          <img className='avatar'  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
           <div style={{textAlign:'center'}}>
             <p style={{marginBottom:'0',color:'#0E8B8F'}}>MUHAMMAD SHIBILI</p>
             <p style={{marginTop:'0'}}>Managing Director</p>
@@ -89,7 +90,7 @@ function About() {
         </div>
 
         <div style={{display:'flex',flexDirection:'column',alignItems:'start',justifyContent:'center',textAlign:'center'}}>
-          <img  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
+          <img className='avatar'   style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
           <div style={{textAlign:'center'}}>
             <p style={{marginBottom:'0',color:'#0E8B8F'}}>MUHAMMAD SHIBILI</p>
             <p style={{marginTop:'0'}}>Managing Director</p>
@@ -99,7 +100,7 @@ function About() {
 
 
         <div style={{display:'flex',flexDirection:'column',alignItems:'start',justifyContent:'center',textAlign:'center'}}>
-          <img  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
+          <img className='avatar'   style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
           <div style={{textAlign:'center'}}>
             <p style={{marginBottom:'0',color:'#0E8B8F'}}>MUHAMMAD SHIBILI</p>
             <p style={{marginTop:'0'}}>Managing Director</p>
@@ -122,7 +123,7 @@ function About() {
         <div style={{display:'grid',gridTemplateColumns:'auto auto auto',columnGap:'6rem',rowGap:'2rem',marginTop:'2rem'}}>
 
         <div style={{display:'flex',flexDirection:'column',alignItems:'start',justifyContent:'center',textAlign:'center'}}>
-          <img  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
+          <img className='avatar'  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
           <div style={{textAlign:'center'}}>
             <p style={{marginBottom:'0',color:'#0E8B8F'}}>MUHAMMAD SHIBILI</p>
             <p style={{marginTop:'0'}}>Managing Director</p>
@@ -131,7 +132,7 @@ function About() {
         </div>
 
         <div style={{display:'flex',flexDirection:'column',alignItems:'start',justifyContent:'center',textAlign:'center'}}>
-          <img  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
+          <img className='avatar' style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
           <div style={{textAlign:'center'}}>
             <p style={{marginBottom:'0',color:'#0E8B8F'}}>MUHAMMAD SHIBILI</p>
             <p style={{marginTop:'0'}}>Managing Director</p>
@@ -141,7 +142,7 @@ function About() {
 
 
         <div style={{display:'flex',flexDirection:'column',alignItems:'start',justifyContent:'center',textAlign:'center'}}>
-          <img  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
+          <img className='avatar' style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
           <div style={{textAlign:'center'}}>
             <p style={{marginBottom:'0',color:'#0E8B8F'}}>MUHAMMAD SHIBILI</p>
             <p style={{marginTop:'0'}}>Managing Director</p>
@@ -150,7 +151,7 @@ function About() {
         </div>
 
         <div style={{display:'flex',flexDirection:'column',alignItems:'start',justifyContent:'center',textAlign:'center'}}>
-          <img  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
+          <img className='avatar' style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
           <div style={{textAlign:'center'}}>
             <p style={{marginBottom:'0',color:'#0E8B8F'}}>MUHAMMAD SHIBILI</p>
             <p style={{marginTop:'0'}}>Managing Director</p>
@@ -159,7 +160,7 @@ function About() {
         </div>
 
         <div style={{display:'flex',flexDirection:'column',alignItems:'start',justifyContent:'center',textAlign:'center'}}>
-          <img  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
+          <img className='avatar' style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
           <div style={{textAlign:'center'}}>
             <p style={{marginBottom:'0',color:'#0E8B8F'}}>MUHAMMAD SHIBILI</p>
             <p style={{marginTop:'0'}}>Managing Director</p>
@@ -168,7 +169,7 @@ function About() {
         </div>
 
         <div style={{display:'flex',flexDirection:'column',alignItems:'start',justifyContent:'center',textAlign:'center'}}>
-          <img  style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
+          <img className='avatar' style={{width:'10rem',border:'1px solid #0E8B8F',borderRadius:'90px'}} src={avatar} alt="" />
           <div style={{textAlign:'center'}}>
             <p style={{marginBottom:'0',color:'#0E8B8F'}}>MUHAMMAD SHIBILI</p>
             <p style={{marginTop:'0'}}>Managing Director</p>

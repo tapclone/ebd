@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import logo from '../assets/logo.svg'
 import Projects from '../components/Projects/Projects'
 
 function ProjectsPage() {
@@ -7,12 +7,14 @@ function ProjectsPage() {
   useEffect(()=>{
     setTimeout(()=>{
       setState(false)
-    },1000)
+    },1500)
   },[])
   return (
     <div className={state?'blankDiv':''}>
         <Projects></Projects>
-        {state?<div className='blank'/>:''}
+        {state?<div className='blank'>
+        <img style={{width:'10rem'}} src={logo} alt="" />
+        </div>:''}
     </div>
   )
 }

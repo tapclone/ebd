@@ -1,3 +1,4 @@
+
 .card{
     width: 15rem;
     height: 20rem;
@@ -37,14 +38,13 @@
     mix-blend-mode: multiply;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
-.scrollSectionSingleProject div{
-    width: 100%;
-}
+
 .scrollSectionSingleProject img{
     border: 5px solid white;
-    width: 80%;
+    width: 8rem;
+    margin-left: 1rem;
     
 }
 .detailsSection{
@@ -76,6 +76,28 @@
     top: 0;
     align-self: center;
     justify-content: center;
-    
+}
+.readMore{
+    cursor: pointer;
+}
+.readMore:hover{
+    text-decoration: underline;
+}
+.scrollBtn{
+    cursor: pointer;
+}
+.scrollBtn:hover{
+    transform: scale(0.9);
 
+}
+.scrollContainer{
+    transition: all 1s ease-in-out;
+    scroll-behavior: smooth;
+}
+.scrollCard{
+    transition: all 1s ease-in-out;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
 }

@@ -1,0 +1,7 @@
+.avatar{
+    border:1px solid #0E8B8F;
+    transition: all ease-out 0.3s;
+}
+.avatar:hover{
+    transform: scale(1.1);
+}

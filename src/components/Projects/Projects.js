@@ -5,8 +5,10 @@ import group from '../../assets/group.png'
 import './Projects.css'
 import image from '../../assets/Asset 3@300.png'
 import EnquiryForm from '../Home/EnquiryForm'
+import {useNavigate} from 'react-router-dom'
 
 function Projects() {
+  const navigate=useNavigate()
   return (
     <div>
       <Header></Header>
@@ -39,7 +41,7 @@ function Projects() {
       </div>
       <div className='card card3'>
         <p style={{maxWidth:'80%',textAlign:'justify',hyphens:'auto',marginTop:'30%',color:'white',fontWeight:'lighter',opacity:'0.8'}}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-        <span style={{color:'white'}}>READ MORE</span>
+        <span className='readMore' onClick={()=>navigate('/project')} style={{color:'white'}}>READ MORE</span>
       </div>
 
       </div>
@@ -61,7 +63,7 @@ function Projects() {
       </div>
       <div className='card card3'>
         <p style={{maxWidth:'80%',textAlign:'justify',hyphens:'auto',marginTop:'30%',color:'white',fontWeight:'lighter',opacity:'0.8'}}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-        <span style={{color:'white'}}>READ MORE</span>
+        <span className='readMore' onClick={()=>navigate('/project')} style={{color:'white'}}>READ MORE</span>
       </div>
 
       </div>

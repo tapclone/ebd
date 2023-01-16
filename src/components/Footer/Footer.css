@@ -3,6 +3,7 @@
     height: 50vh;
     background-color: rgb(234 234 234);
     display: flex;
+    padding: 3% 0;
 }
 .footerSection .logoSection{
     width: 60%;
@@ -16,5 +17,21 @@
     justify-content: center;
 }
 .footerSection .contactSection div{
-    width: 22rem;
+    width: 75%;
+}
+
+.footerSocialMedia svg:hover .cls-1{
+    fill: #0E8B8F;
+}
+.footerSocialMedia svg:hover .cls-2{
+    fill: white;
+}
+.callUs{
+    color: black;
+    text-decoration: none;
+    opacity: 0.7;
+
+}
+.callUs:hover{
+    text-decoration: underline;
 }

@@ -6,13 +6,29 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: black;
+    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .blankDiv{
     height: 100vh;
     overflow: hidden;
+}
+.blank img{
+    animation: logoBlink 0.5s  infinite alternate forwards;
+
+}
+
+@keyframes logoBlink {
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }

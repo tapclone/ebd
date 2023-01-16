@@ -1,0 +1,123 @@
+/* header.................. */
+.headerSection{
+    z-index: 1;
+    position: relative;
+}
+.navSection{
+    width: 100%;
+    position: relative;
+    display: flex;
+    transition: 0.5s all ease-in-out;
+    overflow: hidden;
+}
+
+.navLinks{
+    width: 72%;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    transition: 2s;
+}
+.navLinks span{
+    margin-left: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+.dot{
+    margin: 0px !important;
+}
+.navLinks span a{
+    text-decoration: none;
+    color: black;
+
+}
+.navLinks span a:hover{
+    color: rgb(14, 139, 143);
+}
+.active{
+    color:rgb(14, 139, 143) !important;
+    font-weight: 700;
+}
+.socialMediaSection{
+    width: 28%;
+    display: flex;
+    justify-content: center;
+}
+.socialMediaSection svg{
+    cursor: pointer;
+}
+.socialMediaSection svg:hover .cls-1{
+    fill: #0E8B8F;
+}
+.socialMediaSection svg:hover .cls-2{
+    fill: white;
+}
+
+
+.cls-1{fill:none;stroke:#0e8b8f;stroke-miterlimit:10;}
+.cls-2{fill:#0e8b8f;}
+
+
+#Layer_1{
+    width: 2.3rem;
+    margin-right: 0.8rem;
+}
+
+.hamburger{
+    width: 2rem;
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    transition: all 0.3s ease ;
+}
+.logoSection{
+    text-align: center;
+    cursor: pointer;
+
+}
+.line{
+    display: none;
+}
+
+@media (max-width:850px) {
+    .line{
+        display: block;
+        height: 1.3px;
+        width: 7.5rem;
+        margin-left: 16px;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .dot{
+        display: none;
+    }
+    .navLinks{
+        flex-direction: column;
+    }
+    .navLinks span{
+        margin-top: 1rem;
+    }
+    .navLinks span a{
+        font-weight: 600;
+        color: rgba(0,0,0,0.5);
+        font-size: 1.2rem;
+    }
+    .navSection{
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255,0.8);
+        position: absolute;
+        height: 0px ;
+    }
+    .socialMediaSection{
+       margin-top: auto;
+    }
+    .hamburger{
+        display: block;
+        
+    }
+    .logoSection{
+        text-align: start;
+    }
+}

@@ -1,13 +1,15 @@
 import React from 'react'
 import './Footer.css'
 import logo from '../../assets/logo.svg'
+import {useNavigate} from 'react-router-dom'
 
 function Footer() {
+    const navigate=useNavigate()
     return (
         <div className='footerSection'>
             <div className="logoSection" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="40 30 216 130" style={{width:'12rem'}}>
+                    <svg  onClick={()=>navigate('/')}  id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="40 30 216 130" style={{width:'12rem',cursor:'pointer'}}>
                         <defs>
                             {/* <style>.cls-1{fill:#0e8b8f;}
 
@@ -19,7 +21,7 @@ function Footer() {
                         <path style={{fill:'#0e8b8f'}} class="cls-1 " d="M44.38,120.69l4.88-1.9a3.08,3.08,0,0,1,.32.39,14.14,14.14,0,0,0,6.18,6,15.23,15.23,0,0,0,12.48,1.09,13.93,13.93,0,0,0,7.16-5.6c.26-.38.5-.78.75-1.18a2.63,2.63,0,0,1,3.57-1,2.55,2.55,0,0,1,1,3.62,19.71,19.71,0,0,1-8.89,8.41,20.08,20.08,0,0,1-14,1.14,19.63,19.63,0,0,1-12.86-9.91c-.18-.33-.33-.67-.56-1.14" />
                     </svg>
                     <p style={{ textAlign: 'justify', maxWidth: '17rem', margin: '0' }}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
-                    <div style={{ display: 'flex' }}>
+                    <div className='footerSocialMedia' style={{ display: 'flex' }}>
                         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="60 90 96 50">
                             <path class="cls-1" d="M108,159.62h0a45.32,45.32,0,1,1,45.32-45.32A45.32,45.32,0,0,1,108,159.62Z" />
                             <path class="cls-2" d="M101.88,138.59h9.78V114.1h6.82l.73-8.21h-7.55v-4.67c0-1.93.39-2.69,2.26-2.69h5.29V90h-6.77c-7.28,0-10.56,3.21-10.56,9.35v6.53H96.79v8.31h5.09Z" />
@@ -47,8 +49,8 @@ function Footer() {
             </div>
             <div className="contactSection">
                 <div style={{ borderBottom: '1px solid black', paddingBottom: '15px' }}>
-                    <span style={{ fontSize: '1.1rem', color: '#0E8B8F' }}>CALL US ON</span><br />
-                    <p style={{ margin: '0', marginTop: '2px', fontWeight: '600' }}>+91 9539 714 670</p>
+                    <span style={{ fontSize: '1.1rem', color: '#0E8B8F' }}> CALL US ON</span><br />
+                     <a className='callUs' style={{ margin: '0', marginTop: '2px', fontWeight: '600',cursor:'pointer',}} href="tel:+919539714670">+91 9539 714 670</a>
                 </div>
                 <div style={{ borderBottom: '1px solid black', paddingTop: '10px', paddingBottom: '15px' }}>
                     <span style={{ fontSize: '1.1rem', color: '#0E8B8F' }}>Location</span><br />
