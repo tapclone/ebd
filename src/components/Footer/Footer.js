@@ -9,7 +9,7 @@ function Footer() {
         <div className='footerSection'>
             <div className="logoSection" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <svg  onClick={()=>navigate('/')}  id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="40 30 216 130" style={{width:'12rem',cursor:'pointer'}}>
+                    <svg className='footerLogo' onClick={()=>navigate('/')}  id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="40 30 216 130" style={{width:'12rem',cursor:'pointer'}}>
                         <defs>
                             {/* <style>.cls-1{fill:#0e8b8f;}
 
@@ -20,7 +20,7 @@ function Footer() {
                         <path style={{fill:'#0e8b8f'}} class="cls-1 " d="M44,119.79a12.09,12.09,0,0,1-1-3.23,21.28,21.28,0,0,1,1.88-14.35c3-5.59,7.7-8.83,13.78-10.26a19.64,19.64,0,0,1,11.58.63A19.92,19.92,0,0,1,81,102a3,3,0,0,1,.06,3.11,3,3,0,0,1-1.7,1.24l-7.59,2.9-22.18,8.42c-1.55.59-3.07,1.2-4.61,1.8-.28.11-.58.2-.91.31m30.7-17.38a5.92,5.92,0,0,0-.63-.82,24.49,24.49,0,0,0-2.73-2.38,14.56,14.56,0,0,0-10.16-2.29,14.78,14.78,0,0,0-13,12A10.38,10.38,0,0,0,48,112.6l26.73-10.19" />
                         <path style={{fill:'#0e8b8f'}} class="cls-1 " d="M44.38,120.69l4.88-1.9a3.08,3.08,0,0,1,.32.39,14.14,14.14,0,0,0,6.18,6,15.23,15.23,0,0,0,12.48,1.09,13.93,13.93,0,0,0,7.16-5.6c.26-.38.5-.78.75-1.18a2.63,2.63,0,0,1,3.57-1,2.55,2.55,0,0,1,1,3.62,19.71,19.71,0,0,1-8.89,8.41,20.08,20.08,0,0,1-14,1.14,19.63,19.63,0,0,1-12.86-9.91c-.18-.33-.33-.67-.56-1.14" />
                     </svg>
-                    <p style={{ textAlign: 'justify', maxWidth: '17rem', margin: '0' }}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+                    <p className='textBelow' style={{ textAlign: 'justify', maxWidth: '17rem', margin: '0' }}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
                     <div className='footerSocialMedia' style={{ display: 'flex' }}>
                         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="60 90 96 50">
                             <path class="cls-1" d="M108,159.62h0a45.32,45.32,0,1,1,45.32-45.32A45.32,45.32,0,0,1,108,159.62Z" />
@@ -58,7 +58,7 @@ function Footer() {
                         Thekepuram, Kuttichira, Kozhikode, Kerala 673 003
                     </p>
                 </div>
-                <div style={{ paddingTop: '10px' }}>
+                <div className='businessHours' style={{ paddingTop: '10px' }}>
                     <span style={{ fontSize: '1.1rem', color: '#0E8B8F' }}>Business Hours</span><br />
                     <p style={{ margin: '0' }}>MON-SAT :9AM - 6PM</p>
                 </div>

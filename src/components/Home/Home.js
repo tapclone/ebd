@@ -1,4 +1,4 @@
-import {React,useEffect,useState} from 'react'
+import { React, useEffect, useState } from 'react'
 import Footer from '../Footer/Footer'
 import EnquiryForm from './EnquiryForm'
 import Header from './Header'
@@ -14,91 +14,120 @@ import group from '../../assets/videos/EBD intro.mp4'
 
 function Home() {
   return (
-    <div >
+    <div style={{overflowX:'hidden'}}>
       <Header></Header>
       <section className='groupSection' >
-        <video className='groupDesc' autoPlay muted loop   src={group}></video>
+        <video className='groupDesc' autoPlay muted loop src={group}></video>
         <video className='groupMobile' src={groupMobile} autoPlay muted loop></video>
 
       </section>
 
 
-      <section style={{width:'100%',display:'flex',justifyContent:'center',alignItems:'center'}}>
-        <div className='dividerSection'> 
+      <section style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div className='dividerSection'>
 
-        <video autoPlay loop muted src={divider} ></video>
 
-        <div className='dividerContent'>
-        <h1 className='sectionh1' style={{margin:'0',fontWeight:'lighter',color:'#0E8B8F'}}>Accurate <br /> Dimension Transfer</h1> <br />
-          <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
+          <video autoPlay loop muted src={divider} ></video>
+          <div className="respDividerContent">
+            <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Accurate <br /> <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px',marginTop:'1px' }}></div>
+            Dimension Transfer</h1> <br />
+            
+          </div>
 
-          <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
+          <div className='dividerContent'>
+            <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Accurate <br /> Dimension Transfer</h1> <br />
+            <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
+
+            <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
 
         </div>
 
       </section>
 
-      <section style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+       <section style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className='compasSection'>
-        <div className='compasContent'>
-        <h1 className='sectionh1' style={{margin:'0',fontWeight:'lighter',color:'#0E8B8F',}}>Inscribing shapes <br /> and arcs</h1> <br />
-          <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
+          <div className='compasContent'>
+            <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F', }}>Inscribing shapes <br /> and arcs</h1> <br />
+            <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-          <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+
+          <div className="respCompasContent">
+            <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Inscribing shapes  <br /> <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px',marginTop:'1px' }}></div>
+            and arcs</h1> <br />
+            
+          </div>
+          <video autoPlay loop muted src={compas}></video>
+
+          
         </div>
-          <video controls src={compas}></video>
-        </div>
-        
+
       </section>
 
 
-      <section style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+   <section style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className='protactorSection'>
-          <video controls src={protactor}></video>
+        <div className="respProtactorContent">
+            <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Perfect angles  <br /> <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px',marginTop:'1px' }}></div>
+            and measures</h1> <br />
+            
+          </div>
+          <video autoPlay loop muted src={protactor}></video>
           <div className='protactorContent'>
-          <h1 className='sectionh1' style={{margin:'0',fontWeight:'lighter',color:'#0E8B8F'}}>Perfect angles <br /> and measures</h1> <br />
-          <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
+            <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Perfect angles <br /> and measures</h1> <br />
+            <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-          <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
+            <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
         </div>
 
       </section>
 
-      <section style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+        <section style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className='scale1Section'>
-        <div className='scale1Content'>
-        <h1 className='sectionh1' style={{margin:'0',fontWeight:'lighter',color:'#0E8B8F'}}>Providing a<br />straightedge</h1> <br />
-          <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
+          <div className='scale1Content'>
+            <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Providing a<br />straightedge</h1> <br />
+            <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-          <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <div className="respScale1Content">
+            <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Providing a  <br /> <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px',marginTop:'1px' }}></div>
+            straightedge</h1> <br />
+            
+          </div>
+          <video src={scale1} autoPlay loop muted ></video>
         </div>
-          <video src={scale1} controls></video>
-        </div>
-        
+
       </section>
 
-      <section style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+      <section style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className='scale2Section'>
-          <video src={scale2} controls></video>
+        <div className="respScale2Content">
+            <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Planar angle<br /> <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px',marginTop:'1px' }}></div>
+            to a baseline</h1> <br />
+
+          </div>
+          <video src={scale2} autoPlay loop muted ></video>
           <div className='scale2Content'>
-          <h1 className='sectionh1' style={{margin:'0',fontWeight:'lighter',color:'#0E8B8F'}}>Planar angle<br />to a baseline</h1> <br />
-          <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
+            <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Planar angle<br />to a baseline</h1> <br />
+            <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-          <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery.</p>
-        </div>
+            <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery.</p>
+          </div>
         </div>
       </section>
 
-      <section style={{textAlign:'center',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',paddingTop:'5rem',paddingBottom:'4%'}}>
-        <h1 style={{textTransform:'uppercase',color:'#0E8B8F',fontWeight:'lighter'}}>a Perfect craft in every aspect</h1>
-        <div style={{width:'3rem',height:'1px',background:'#0E8B8F'}}></div>
-        <h1 style={{textTransform:'uppercase',color:'rgba(0,0,0,0.5)',fontWeight:'lighter'}}>Thats what we stand for!</h1>
+       <section className='caption' style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', paddingTop: '5rem', paddingBottom: '4%' }}>
+        <h1 style={{ textTransform: 'uppercase', color: '#0E8B8F', fontWeight: 'lighter' }}>a Perfect craft in every aspect</h1>
+        <div style={{ width: '3rem', height: '1px', background: '#0E8B8F' }}></div>
+        <h1 style={{ textTransform: 'uppercase', color: 'rgba(0,0,0,0.5)', fontWeight: 'lighter' }}>Thats what we stand for!</h1>
       </section>
 
-      <EnquiryForm></EnquiryForm>
-      <Footer></Footer>
+   <EnquiryForm></EnquiryForm>
+        <Footer></Footer>
     </div>
   )
 }

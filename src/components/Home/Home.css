@@ -1,25 +1,28 @@
-
 /* enquiryform................. */
 
-.enquirySection{
+.enquirySection {
     width: 100%;
     background-color: #0E8B8F;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0;
+    height: 50vh;
 }
-.enquirySection h3{
+
+.enquirySection h3 {
     color: white;
     font-weight: lighter;
     font-size: 2rem;
     margin: 15px;
 }
-.enquiryInput{
+
+.enquiryInput {
     width: 42%;
+    min-width: 20rem;
 }
-.enquirySection input{
+
+.enquirySection input {
     width: 100%;
     height: 2.4rem;
     border-radius: 2px;
@@ -27,7 +30,8 @@
     outline: none;
     padding-left: 18px;
 }
-.enquirySection span{
+
+.enquirySection span {
     color: white;
     font-size: 1.5rem;
     border: 1.5px solid rgba(255, 255, 255, 0.5);
@@ -37,26 +41,30 @@
     border-radius: 2px;
     cursor: pointer;
 }
-.enquirySection span:hover{
+
+.enquirySection span:hover {
     background-color: white;
     color: #0E8B8F;
 
 }
-.enquirySection input::placeholder{
-    color: rgba(142, 142, 142,0.6);
+
+.enquirySection input::placeholder {
+    color: rgba(142, 142, 142, 0.6);
     font-size: 1rem;
-    
+
 }
-.dropInput{
+
+.dropInput {
     padding: 0.8rem 0.5rem;
     border-radius: 4px;
     transition: all ease 1s;
     cursor: pointer;
 }
+
 /* sections................ */
 
-    
-.groupSection{
+
+.groupSection {
     width: 100%;
     text-align: center;
     height: fit-content;
@@ -65,20 +73,22 @@
     justify-content: center;
 
 }
-.groupDesc{
+
+.groupDesc {
     width: 90%;
     margin-top: -5%;
     min-width: 40.5rem;
 }
-.groupMobile{
+
+.groupMobile {
     display: none;
     width: 50%;
     margin-top: -5%;
     min-width: 18rem;
 
 }
-@media (min-width:650px) {
-.dividerSection{
+
+.dividerSection {
     width: 80%;
     display: flex;
     align-items: center;
@@ -86,18 +96,21 @@
     margin-top: -5%;
     position: relative;
 }
-.dividerSection video{
+
+.dividerSection video {
     width: 62%;
     min-width: 25rem;
 }
-.dividerContent{
+
+.dividerContent {
     display: flex;
     flex-direction: column;
     height: fit-content;
     margin-left: -18%;
     width: 40%;
 }
-.compasSection{
+
+.compasSection {
     width: 80%;
     display: flex;
     align-items: center;
@@ -105,18 +118,21 @@
     position: relative;
     margin-top: -5%;
 }
-.compasSection video{
+
+.compasSection video {
     width: 60%;
     margin-left: 40%;
     min-width: 26rem;
 }
-.compasContent{
+
+.compasContent {
     width: 40%;
     height: fit-content;
     margin-left: -20%;
     position: absolute;
 }
-.protactorSection{
+
+.protactorSection {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,16 +140,19 @@
     position: relative;
 
 }
-.protactorSection video{
+
+.protactorSection video {
     width: 55%;
     z-index: 1;
     min-width: 26rem;
 }
-.protactorContent{
+
+.protactorContent {
     width: 30%;
     margin-top: -20%;
 }
-.scale1Section{
+
+.scale1Section {
     width: 100%;
     display: flex;
     align-items: center;
@@ -141,76 +160,385 @@
     position: relative;
     margin-top: -5%;
 }
-.scale1Section video{
+
+.scale1Section video {
     width: 55%;
     margin-left: 30%;
     min-width: 27rem;
 
 }
-.scale1Content{
+
+.scale1Content {
     width: 30%;
     margin-left: -25%;
     top: 15%;
     position: absolute;
 }
-.scale2Section{
+
+.scale2Section {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
-.scale2Section video{
+
+.scale2Section video {
     width: 55%;
     min-width: 28rem;
 }
-.scale2Content{
+
+.scale2Content {
     width: 32%;
     margin-top: -20%;
     margin-left: -10%;
 }
 
-}
 /* font sizes..................... */
 
-.sectionh1{
-    font-size: clamp(1.2rem,3vw,1.8rem);
+.sectionh1 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
 }
-.sectionp{
-    font-size: clamp(0.8rem,1vw,1.1rem);
+
+.sectionp {
+    font-size: clamp(0.8rem, 1vw, 1.1rem);
 }
 
 @media (max-width:750px) {
-    .dividerContent{
+    .dividerContent {
         width: 45%;
         margin-left: -22%;
     }
-    .compasContent{
+
+    .compasContent {
         width: 45%;
         margin-left: -30%;
     }
-    .protactorContent{
+
+    .protactorContent {
         margin-top: -25%;
         margin-left: -5%;
         z-index: 2;
     }
-    .scale1Content{
+
+    .scale1Content {
         width: 35%;
         margin-left: -35%;
         top: 15%;
     }
-    .underLine{
+
+    .underLine {
         margin-top: -13px;
     }
-    
+
 }
+
+.respDividerContent,
+.respCompasContent,
+.respProtactorContent,
+.respScale1Content,
+.respScale2Content {
+    display: none;
+}
+
 @media (max-width:650px) {
-    .groupDesc{
+    .enquirySection{
+        padding-top: 5rem;
+    }
+    .enquirySection h3{
+        font-size: 1.5rem;
+    }
+    .enquiryInput{
+        min-width:17rem ;
+        height: 2rem;
+    }
+    .enquiryInput input{
+        height: 1.3rem;
+    }
+    .enquiryInput input::placeholder{
+        font-size: 0.8rem;
+    }
+    .dropInput{
+        padding: 0.4rem 0.2rem;
+        top: 1px;
+    }
+    .enquirySection span{
+        margin-top: 0;
+    }
+    .enquirySection{
+        height: 40vh;
+    }
+    .groupDesc {
         display: none;
     }
-    .groupMobile{
+
+    .groupMobile {
         display: block;
+    }
+
+    /* ..........divider....... */
+    .dividerContent {
+        display: none;
+    }
+
+    .dividerSection {
+        width: 100%;
+        position: relative;
+        margin-top: -20%;
+        height: 20rem;
+    }
+
+    .dividerSection video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin: 0px;
+        min-width: 28rem;
+    }
+
+    .respDividerContent {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top: 35%;
+        right: 14%;
+    }
+
+    /* ..........compas....... */
+    .compasContent {
+        display: none;
+    }
+
+    .respCompasContent {
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 15%;
+        z-index: 3;
+    }
+
+    .compasSection {
+        position: relative;
+        width: 100%;
+        height: 20rem;
+        margin-top: 35%;
+    }
+
+    .compasSection video {
+        position: absolute;
+        width: 90%;
+        min-width: 29rem;
+        top: 0;
+        margin: 0;
+    }
+
+    /* .......protactor....... */
+    .respProtactorContent {
+        display: block;
+        position: absolute;
+        top: 29%;
+        right: 6%;
+        z-index: 3;
+    }
+
+    .protactorSection {
+        width: 100%;
+        margin-top: 50%;
+        position: relative;
+        height: 20rem;
+    }
+
+    .protactorContent {
+        display: none;
+
+    }
+
+    .protactorSection video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 26rem;
+        width: 90%;
+    }
+
+    /* ....scale1......... */
+    .scale1Content {
+        display: none;
+    }
+
+    .respScale1Content {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        z-index: 3;
+    }
+
+    .scale1Section {
+        width: 100%;
+        height: 20rem;
+        position: relative;
+        margin-top: 30%;
+
+    }
+
+    .scale1Section video {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        min-width: 25rem;
+    }
+
+    /* ........scale2......... */
+    .respScale2Content {
+        display: block;
+        position: absolute;
+        top: 45%;
+        right: 6%;
+        z-index: 3;
+    }
+
+    .scale2Content {
+        display: none;
+    }
+
+    .scale2Section {
+        width: 100%;
+        position: relative;
+        margin: 0;
+        margin-top: 45%;
+        height: 20rem;
+    }
+
+    .scale2Section video {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        min-width: 25rem;
+    }
+    .caption{
+        visibility: hidden !important;
+    }
+
+}
+
+@media (max-width:610px) {
+    .enquirySection{
+        padding-top: 3rem;
     }
 }
 
+@media (max-width:500px) {
+    .dividerSection video {
+        left: -10%;
+    }
 
+    .respProtactorContent {
+        top: 20%;
+        right: 4%;
+    }
+
+    .respScale2Content {
+        top: 43%;
+        right: 3%;
+    }
+
+
+}
+
+@media (max-width:450px) {
+    .enquirySection{
+        padding-top: 1rem;
+    }
+    .dividerSection video {
+        left: -25%;
+    }
+
+    .respDividerContent {
+        right: 7%;
+    }
+
+    .protactorSection video {
+        left: -14%;
+    }
+
+    .respProtactorContent {
+        top: 15%;
+        right: 3%;
+    }
+
+    .respScale1Content {
+        top: 45%;
+        left: 4%;
+    }
+
+    .respScale2Content {
+        top: 32%;
+        left: 2%;
+    }
+}
+@media (max-width:375px) {
+    .scale2Section video{
+        left: -5%;
+    }
+}
+
+@media (max-width:350px) {
+    .dividerSection video {
+        left: -36%;
+    }
+
+    .respDividerContent {
+        right: 2%;
+    }
+
+    .respDividerContent h1 {
+        font-size: 1rem;
+    }
+
+    .respCompasContent h1 {
+        font-size: 1rem;
+    }
+
+    .protactorSection video {
+        left: -20%;
+    }
+
+    .respProtactorContent h1 {
+        font-size: 1rem;
+    }
+
+    .respScale1Content h1 {
+        font-size: 1rem;
+    }
+
+    .scale1Section video {
+        left: -10%;
+        min-width: 25rem;
+    }
+    .scale2Section video{
+        min-width: 23rem;
+    }
+
+
+}
+
+@media (max-width:330px) {
+    .scale1Section video {
+        left: -11%;
+        min-width: 23rem;
+    }
+
+    .respScale1Content {
+        top: 30%;
+    }
+
+    .scale2Section video {
+        left: -7%;
+        min-width: 21rem;
+    }
+}

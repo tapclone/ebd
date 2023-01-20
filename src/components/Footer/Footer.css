@@ -35,3 +35,39 @@
 .callUs:hover{
     text-decoration: underline;
 }
+
+@media (max-width:650px) {
+    .businessHours{
+        display: none;
+    }
+    .textBelow{
+        display: none;
+    }
+    .footerSocialMedia{
+        margin-top: -2rem;
+    }
+    .footerSection .logoSection{
+        width: 40%;
+        padding-left: 10%;
+    }
+    .footerSection .contactSection{
+        width: 60%;
+    }
+    .footerLogo{
+        width: 10rem !important;
+    }
+    .footerSocialMedia svg{
+        width: 1.6rem !important;
+        margin-right: 0.2rem !important;
+    }
+    .footerSection .contactSection div{
+        width: 90%;
+    }
+    .contactSection span,a,p{
+        font-size: 0.9rem !important;
+    }
+    .contactSection div{
+        border-bottom: #0E8B8F 2px solid !important;
+    }
+
+}
