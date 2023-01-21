@@ -7,6 +7,9 @@ import BlogPage from './Pages/BlogPage'
 import ContactPage from './Pages/ContactPage'
 import './App.css'
 import SingleProjectPage from './Pages/SingleProjectPage'
+import BuildersPage from './Pages/BuildersPage'
+import DesignHousePage from './Pages/DesignHousePage'
+import ConstructionsPage from './Pages/ConstructionsPage'
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
       <Route exact path="/blogs" element={<BlogPage/>}></Route>
       <Route exact path="/contact" element={<ContactPage/>}></Route>
       <Route exact path="/project" element={<SingleProjectPage/>}></Route>
+      <Route exact path="/builders" element={<BuildersPage/>}></Route>
+      <Route exact path="/designHouse" element={<DesignHousePage/>}></Route>
+      <Route exact path="/constructions" element={<ConstructionsPage/>}></Route>
       </Routes>
       </BrowserRouter>
 

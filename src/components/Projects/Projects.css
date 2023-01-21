@@ -101,3 +101,53 @@
 html{
     scroll-behavior: smooth;
 }
+
+/* constructions............... */
+
+.constructionSection{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.constructionSection .imgSec{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgSec img{
+    width: 65%;
+}
+.constructionSection .contentSec{
+    width: 50%;
+}
+.constructionH1{
+    text-align: -webkit-center;
+}
+.constructionH1::after{
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 1px;
+    margin-top: 10px;
+    background-color: #0E8B8F;
+}
+.readMoreC{
+    background-color: #0e8b8f;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 7px;
+    margin-top: 2rem;
+}
+.constructionP{
+    text-align: -webkit-center;
+}
+.constructionP::before{
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 1px;
+    margin-bottom: 10px;
+    background-color: #0E8B8F;
+}

@@ -1,21 +1,21 @@
-import {React,useState} from 'react'
-import { NavLink} from 'react-router-dom'
+import { React, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import './Home.css'
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import logo from '../../assets/logo.svg'
 import hamburger from '../../assets/hamburger.svg'
 import './header.css'
 import closeBtn from '../../assets/close.svg'
 
 function Header() {
-    const navigate=useNavigate()
-    const [responsive,setResponsive]=useState(false)
+    const navigate = useNavigate()
+    const [responsive, setResponsive] = useState(false)
 
-   window.addEventListener('resize',()=>{
-    if(window.innerWidth>850){
-        setResponsive(false)
-    }
-   })
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 850) {
+            setResponsive(false)
+        }
+    })
     // var selector=document.querySelectorAll('.nav')
     // selector.forEach(element=>{
     //     element.addEventListener('click',()=>{
@@ -24,20 +24,30 @@ function Header() {
     //         this.classList.add('activeNavLink')
     //     })
     // })
-    
+    window.addEventListener('scroll',()=>{
+
+        setResponsive(false)
+    })
 
     return (
-        <div className='headerSection'>
-            <div onClick={()=>navigate('/')}  className='logoSection'>
-                <img  className='logo' style={{ width: '10rem'}} src={logo} alt="" />
+        <div className='headerSection' >
+            <div onClick={() => navigate('/')} className='logoSection'>
+                <img className='logo' style={{ width: '10rem' }} src={logo} alt="" />
             </div>
 
-            <div className='navSection' style={{height:responsive?'80vh':''}}>
+            <div className='navSection' style={{ height: responsive ? '80vh' : '' }}>
 
                 <div className="navLinks">
                     <span ><NavLink to='/'> HOME &nbsp;<span className='dot'>.</span></NavLink></span><div className='line'></div>
                     <span><NavLink to='/about' > ABOUT US &nbsp;<span className='dot'>.</span></NavLink></span><div className='line'></div>
-                    <span ><NavLink to='/projects'> OUR PROJECTS &nbsp;<span className='dot'>.</span></NavLink></span><div className='line'></div>
+                    <span className='dropdown'><NavLink className='dropNav'> OUR PROJECTS &nbsp;<span className='dot'>.</span></NavLink>
+                        <ul className='dropdownList'>
+                            <li><NavLink to='/constructions'>Ebd Constructions</NavLink></li>
+                            <li><NavLink to='/designHouse'>Ebd Design House</NavLink></li>
+                            <li><NavLink to='/builders'>Ebd Builders</NavLink></li>
+                        </ul>
+
+                    </span><div className='line lineI'></div>
                     <span ><NavLink to='/blogs'> BLOGS &nbsp;<span className='dot'>.</span></NavLink></span><div className='line'></div>
                     <span ><NavLink to='/contact'> CONTACT US &nbsp;<span className='dot'>.</span></NavLink></span><div className='line'></div>
                 </div>
@@ -65,10 +75,10 @@ function Header() {
                     </svg>
                 </div>
                 {/* <div style={{background:'black',height:'1px',width:'14rem',position:'absolute',top:'53px',right:'75px'}}></div> */}
-                
-                
+
+
             </div>
-            <img className='hamburger' onClick={()=>setResponsive(!responsive)} src={responsive?closeBtn:hamburger} alt="" />
+            <img className='hamburger' onClick={() => setResponsive(!responsive)} src={responsive ? closeBtn : hamburger} alt="" />
         </div>
     )
 }

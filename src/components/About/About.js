@@ -2,9 +2,10 @@ import React from 'react'
 import Footer from '../Footer/Footer'
 import EnquiryForm from '../Home/EnquiryForm'
 import Header from '../Home/Header'
-import group from '../../assets/group.png'
 import avatar from '../../assets/Asset 1@300.png'
 import './About.css'
+import groupMobile from '../../assets/videos/EBD mobile gif.mp4'
+import group from '../../assets/videos/EBD intro.mp4'
 
 function About() {
   return (
@@ -12,7 +13,9 @@ function About() {
       <Header></Header>
 
       <section className='groupSection' >
-        <img style={{ width:'70%'}} src={group} alt="" />
+        <video className='groupDesc' autoPlay muted loop src={group}></video>
+        <video className='groupMobile' src={groupMobile} autoPlay muted loop></video>
+
       </section>
      
       <section style={{display:'flex',alignItems:'center',justifyContent:'center',width:'100%',marginTop:'4rem'}}>

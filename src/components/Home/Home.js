@@ -4,12 +4,12 @@ import EnquiryForm from './EnquiryForm'
 import Header from './Header'
 import './Home.css'
 import divider from '../../assets/videos/divider.mp4'
-import groupMobile from '../../assets/videos/EBD mobile gif.mp4'
 import compas from '../../assets/videos/Compass.mp4'
 import protactor from '../../assets/videos/protractor.mp4'
 import scale1 from '../../assets/videos/set square 2.mp4'
 import scale2 from '../../assets/videos/set square.mp4'
 import group from '../../assets/videos/EBD intro.mp4'
+import groupMobile from '../../assets/videos/EBD mobile gif.mp4'
 
 
 function Home() {

@@ -8,7 +8,7 @@
     position: relative;
     display: flex;
     transition: 0.5s all ease-in-out;
-    overflow: hidden;
+    
 }
 
 .navLinks{
@@ -46,6 +46,7 @@
 }
 .socialMediaSection svg{
     cursor: pointer;
+    min-width: 2rem;
 }
 .socialMediaSection svg:hover .cls-1{
     fill: #0E8B8F;
@@ -109,6 +110,7 @@
         background-color: rgba(255, 255, 255,0.8);
         position: absolute;
         height: 0px ;
+        overflow: hidden;
     }
     .socialMediaSection{
        margin-top: auto;
@@ -119,5 +121,69 @@
     }
     .logoSection{
         text-align: start;
+    }
+    
+}
+@media (min-width:850px) {
+    .dropdownList{
+        position: absolute;
+    }
+}
+.dropdown{
+    position: relative;
+    text-align: center;
+}
+.dropdownList li{
+    list-style: none;
+    color: black;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    width: 90%;
+
+    margin-left: 8px;
+}
+.dropdownList{
+    
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 90%;
+    opacity: 0;
+    display: none;
+    transition: opacity ease 1s;
+}
+
+.dropdown:hover .dropdownList li{
+    border-bottom: 1px solid black;
+}
+.dropdown:hover .dropdownList{
+    display: block;
+    animation: visibleItem 1s ease  forwards;
+
+}
+.dropdown:hover ~.lineI{
+    visibility: hidden;
+}
+@media (max-width:850px) {
+    .dropdown:hover .dropNav{
+        font-size: 1.5rem !important;
+    }
+    .dropdown:hover .dropdownList li{
+        margin-left: 15px;
+    }
+    .navLinks a {
+        font-size: 1.3rem !important;
+    }
+    .dropdownList li a{
+        font-weight: normal !important;
+        font-size: 1rem !important;
+    }
+
+}
+@keyframes visibleItem {
+    to{
+        opacity: 1;
     }
 }
