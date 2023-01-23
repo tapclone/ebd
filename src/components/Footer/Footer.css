@@ -9,14 +9,14 @@
     width: 60%;
     height: inherit;
 }
-.footerSection .contactSection{
+.footerSection .contactSectionF{
     width: 40%;
     height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.footerSection .contactSection div{
+.footerSection .contactSectionF div{
     width: 75%;
 }
 
@@ -50,7 +50,7 @@
         width: 40%;
         padding-left: 10%;
     }
-    .footerSection .contactSection{
+    .footerSection .contactSectionF{
         width: 60%;
     }
     .footerLogo{
@@ -60,13 +60,13 @@
         width: 1.6rem !important;
         margin-right: 0.2rem !important;
     }
-    .footerSection .contactSection div{
+    .footerSection .contactSectionF div{
         width: 90%;
     }
-    .contactSection span,a,p{
+    .contactSectionF span,a,p{
         font-size: 0.9rem !important;
     }
-    .contactSection div{
+    .contactSectionF div{
         border-bottom: #0E8B8F 2px solid !important;
     }
 

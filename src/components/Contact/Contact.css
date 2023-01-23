@@ -32,6 +32,7 @@
 .newsLetter{
     background-color: #0E8B8F;
     width: 100%;
+    height: 53vh;
     display: flex;
     padding: 1.5rem 0;
     box-shadow: 0px 4px 10px rgb(33 33 33 / 50%);
@@ -45,28 +46,37 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 3rem 0;
     position: relative;
 }
 .newsLetter2{
     width: 30%;
+    min-width: 20rem;
 }
 
 .newsLetter1 h2{
     font-weight: normal;
     margin-bottom: 1rem !important;
+    margin-top: 2rem !important;
 }
 .newsLetter1 p{
     width: 55%;
-    margin-bottom: 2rem !important;
+    min-width: 20rem;
 }
-.newsLetter1 input{
+.contactInputDiv{
+    width: 43%;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 3rem;
+    min-width: 20rem;
+}
+.contactInputDiv input{
     border: none;
     outline: none;
     padding-left: 15px;
-    width: 43%;
+    width: 100%;
     height: 2.8rem;
     border-radius: 25px;
+    
 }
 .newsLetter1 span{
     position: absolute;
@@ -75,8 +85,8 @@
     border-radius: 17px;
     color: white;
     font-size: 0.7rem;
-    bottom: 22%;
-    right: 29%;
+    right: -2%;
+    top: 18%;
     font-weight: 500 !important;
 }
 .newsLetter2{
@@ -84,6 +94,8 @@
 }
 .newsLetter2 div{
     position: absolute;
+    max-width: 18rem;
+    min-width: 18rem;
     width: 80%;
     background-color: #f6f6f6;
     display: flex;
@@ -122,4 +134,52 @@
     font-size: 0.8rem;
     border-radius: 15px;
     color: white;
+}
+@media (max-width:700px) {
+    .mapIframe iframe{
+        aspect-ratio: 1/0.8 !important;
+    }
+}
+@media (max-width:650px) {
+    .contactSection,.mapSection{
+        width: 80% !important;
+    }
+    .logoSectionContact{
+        width: 35%;
+    }
+    .ContactDetails{
+        width: 65%;
+    }
+    
+}
+@media (max-width:450px) {
+    .contactSection,.mapSection{
+        width: 90% !important;
+    }
+}
+@media (max-width:700px) {
+    .newsLetter1{
+        display: none !important;
+    }
+    .newsLetter{
+        padding: 0 !important;
+        height: 0 !important;
+    }
+    .respEnquiryForm{
+        display: block !important;
+        margin-top: 16rem;
+    }
+    .newsLetter2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsLetter2 div{
+        margin-top: -2rem;
+    }
+    .newsLetterSectionP{
+        max-width: 20rem;
+    }
+    
 }

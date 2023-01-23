@@ -5,3 +5,125 @@
 .avatar:hover{
     transform: scale(1.1);
 }
+.section1Abt{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.section1AbtH1Resp{
+    display: none;
+}
+.section1AbtUnderline{
+    width: 3rem;
+}
+@media (max-width:1000px) {
+    .section1Abt,.section2Abt,.aboutCoreSection1,.theTeamSection{
+        width: 70% !important;
+    }
+}
+@media (max-width:830px) {
+    .section2AbtH1{
+        font-weight: 500 !important;
+    }
+    .foundersSection1{
+        flex-direction: row !important;
+        width: 100% !important;
+        align-items: end !important;
+        justify-content: start !important;
+    }
+    .foundersSection{
+        flex-direction: column !important;
+    }
+    .foundersSection2{
+        width: 100% !important;
+    }
+    .founderH1{
+        font-weight: 500 !important;
+    }
+    .secondFoundersSection2{
+        order: 1;
+        
+    }
+    .secondFoundersSection1{
+        justify-content: end !important;
+    }
+    .secondFoundersSection1 img{
+        order: 2;
+    }
+}
+@media (max-width:810px) {
+    .aboutCoreSection1{
+        width: 85% !important;
+    }
+    .theTeamSection{
+        width: 85% !important;
+    }
+}
+
+
+
+
+@media (max-width:750px) {
+    .aboutCoreSection1{
+        width: 90% !important;
+    }
+    .theTeamSection{
+        width: 90% !important;
+    }
+}
+
+@media (max-width:650px) {
+    .section1AbtH1Resp{
+        display: block;
+        font-weight:500 !important ;
+        padding-bottom: 5px;
+    }
+    .section1AbtH1{
+        display: none;
+        
+    }
+    .section1Abt,.section2Abt{
+        width: 80% !important;
+    }
+    .theTeamSection{
+        width: 100% !important;
+    }
+    .aboutSection{
+        margin-top: 0 !important;
+        margin-bottom: 1rem !important;
+    }
+    .section1AbtUnderline{
+        width: 5rem;
+    }
+    .AboutCore{
+        display: none !important;
+    }
+    .teamGrid{
+        display: flex !important;
+        overflow-x:scroll ;
+    }
+    .theTeamSectionH1{
+        margin-left: 2rem !important;
+    }
+    .card1{
+        margin-left: 2rem !important;
+    }
+    .card2{
+        margin-right: 2rem !important;
+    }
+}
+
+@media (max-width:450px) {
+    .section1Abt,.section2Abt{
+        width: 90% !important;
+    }
+}
+
+.section2Abt{
+    width: 60%;
+}
+.foundersSection{
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+}

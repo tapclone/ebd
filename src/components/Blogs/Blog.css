@@ -53,3 +53,23 @@
 .blogCard .contentSectionBlogCard h2{
     margin-bottom: 1rem !important;
 }
+@media (max-width:1100px) {
+    .blogSection{
+        width: 90%;
+    }
+}
+@media (max-width:975px) {
+    .blogSection{
+        width: 100%;
+    }
+}
+@media (max-width:860px) {
+    .blogCard{
+        width: 90%;
+    }
+}
+@media (max-width:760px) {
+    .blogCard{
+        width: 95%;
+    }
+}

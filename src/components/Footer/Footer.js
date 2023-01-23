@@ -47,7 +47,7 @@ function Footer() {
                 </div>
 
             </div>
-            <div className="contactSection">
+            <div className="contactSectionF">
                 <div style={{ borderBottom: '1px solid black', paddingBottom: '15px' }}>
                     <span style={{ fontSize: '1.1rem', color: '#0E8B8F' }}> CALL US ON</span><br />
                      <a className='callUs' style={{ margin: '0', marginTop: '2px', fontWeight: '600',cursor:'pointer',}} href="tel:+919539714670">+91 9539 714 670</a>
