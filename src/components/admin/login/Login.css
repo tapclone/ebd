@@ -1,0 +1,97 @@
+.login_section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eeeeee;
+}
+
+.loginform {
+    width: 35%;
+    height: 80vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.form_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_login label {
+    width: 100%;
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+::placeholder {
+    color: #909090;
+}
+
+.form_login .login_fields {
+    width: 250px;
+    padding: 12px 8px;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid #bdbdbd;
+}
+
+.form_login .login_fields:focus {
+    outline: none !important;
+    border: 1px solid lightseagreen;
+    box-shadow: 0 0 5px lightseagreen;
+}
+
+.login_submit {
+    width: 250px;
+    color: white;
+    border: none;
+    padding: 12px 5px;
+    border-radius: 4px;
+    /* background-image: linear-gradient(to right ,#eb7026, #c0408a); */
+    background-image: linear-gradient(to right, #eb7026, #c0408a, #120eee, #F24645);
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-size: 300% 100%;
+}
+
+.login_submit:focus {
+    outline: none;
+}
+
+.login_submit:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.error {
+    color: #F24645;
+    font-weight: 500;
+}
+
+@media (max-width:1300px) {
+    .loginform {
+        width: 60%;
+    }
+}
+
+@media (max-width:800px) {
+    .loginform {
+        width: 90%;
+        height: 10%;
+    }
+}
