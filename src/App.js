@@ -10,6 +10,7 @@ import SingleProjectPage from './Pages/SingleProjectPage'
 import BuildersPage from './Pages/BuildersPage'
 import DesignHousePage from './Pages/DesignHousePage'
 import ConstructionsPage from './Pages/ConstructionsPage'
+import BlogSinglePage from './Pages/BlogSinglePage'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route exact path="/about" element={<AboutPage/>}></Route>
       <Route exact path="/projects" element={<ProjectsPage/>}></Route>
       <Route exact path="/blogs" element={<BlogPage/>}></Route>
+      <Route exact path="/blog" element={<BlogSinglePage/>}></Route>
       <Route exact path="/contact" element={<ContactPage/>}></Route>
       <Route exact path="/project" element={<SingleProjectPage/>}></Route>
       <Route exact path="/builders" element={<BuildersPage/>}></Route>

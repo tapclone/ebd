@@ -105,10 +105,10 @@
     .theTeamSectionH1{
         margin-left: 2rem !important;
     }
-    .card1{
+    .teamGrid .card1{
         margin-left: 2rem !important;
     }
-    .card2{
+    .teamGrid .card2{
         margin-right: 2rem !important;
     }
 }

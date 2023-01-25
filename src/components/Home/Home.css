@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 18rem;
 }
 
 .enquirySection h3 {
@@ -266,7 +266,7 @@
         margin-top: 0;
     }
     .enquirySection{
-        height: 40vh;
+        height: 13rem;
     }
     .groupDesc {
         display: none;
