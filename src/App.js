@@ -30,6 +30,7 @@ function App() {
         <Route exact path="/builders" element={<BuildersPage />}></Route>
         <Route exact path="/designHouse"  element={<DesignHousePage />} ></Route>
         <Route exact  path="/constructions"  element={<ConstructionsPage />} ></Route>
+        <Route exact  path="/blog"  element={<BlogSinglePage />} ></Route>
 
         {/* admin pages routes */}
         <Route exact path="/admin-login" element={<AdminLogin />}></Route>

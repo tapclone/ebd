@@ -5,15 +5,12 @@ import group from '../../assets/videos/EBD intro.mp4'
 import './Blog.css'
 import image from '../../assets/Asset 3@300.png'
 import EnquiryForm from '../Home/EnquiryForm'
+import GroupSection from '../Home/GroupSection'
 function Blogs() {
   const navigate=useNavigate()
   return (
     <div>
-      <section className='groupSection' >
-        <video className='groupDesc' autoPlay muted loop src={group}></video>
-        <video className='groupMobile' src={groupMobile} autoPlay muted loop></video>
-
-      </section>
+      <GroupSection></GroupSection>
 
       <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', paddingBottom: '3rem' }}>
 
@@ -30,7 +27,7 @@ function Blogs() {
               <h2 style={{ margin: '0' ,fontWeight:'normal'}}>Best Builders In Calicut</h2>
               <p style={{ textAlign: 'justify', color: 'white', margin: '0', marginBottom: '2rem' }}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               <div style={{textAlign:'center'}}>
-                <span className='readMoreC' onClick={()=>navigate('/BLOG')} style={{ border: '1px solid white' }}>Read More</span>
+                <span className='readMoreC' onClick={()=>navigate('/blog')} style={{ border: '1px solid white' }}>Read More</span>
               </div>
 
             </div>
@@ -47,7 +44,7 @@ function Blogs() {
               <h2 style={{ margin: '0' ,fontWeight:'normal'}}>Best Builders In Calicut</h2>
               <p style={{ textAlign: 'justify', color: 'white', margin: '0', marginBottom: '2rem' }}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               <div style={{textAlign:'center'}}>
-                <span className='readMoreC' onClick={()=>navigate('/BLOG')} style={{ border: '1px solid white' }}>Read More</span>
+                <span className='readMoreC' onClick={()=>navigate('/blog')} style={{ border: '1px solid white' }}>Read More</span>
               </div>
 
             </div>
@@ -62,7 +59,7 @@ function Blogs() {
               <h2 style={{ margin: '0' ,fontWeight:'normal'}}>Best Builders In Calicut</h2>
               <p style={{ textAlign: 'justify', color: 'white', margin: '0', marginBottom: '2rem' }}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               <div style={{textAlign:'center'}}>
-                <span className='readMoreC' onClick={()=>navigate('/BLOG')} style={{ border: '1px solid white' }}>Read More</span>
+                <span className='readMoreC' onClick={()=>navigate('/blog')} style={{ border: '1px solid white' }}>Read More</span>
               </div>
 
             </div>
@@ -77,7 +74,7 @@ function Blogs() {
               <h2 style={{ margin: '0' ,fontWeight:'normal'}}>Best Builders In Calicut</h2>
               <p style={{ textAlign: 'justify', color: 'white', margin: '0', marginBottom: '2rem' }}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               <div style={{textAlign:'center'}}>
-                <span className='readMoreC' onClick={()=>navigate('/BLOG')} style={{ border: '1px solid white' }}>Read More</span>
+                <span className='readMoreC' onClick={()=>navigate('/blog')} style={{ border: '1px solid white' }}>Read More</span>
               </div>
 
             </div>
@@ -92,7 +89,7 @@ function Blogs() {
               <h2 style={{ margin: '0' ,fontWeight:'normal'}}>Best Builders In Calicut</h2>
               <p style={{ textAlign: 'justify', color: 'white', margin: '0', marginBottom: '2rem' }}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               <div style={{textAlign:'center'}}>
-                <span className='readMoreC' onClick={()=>navigate('/BLOG')} style={{ border: '1px solid white' }}>Read More</span>
+                <span className='readMoreC' onClick={()=>navigate('/blog')} style={{ border: '1px solid white' }}>Read More</span>
               </div>
 
             </div>
