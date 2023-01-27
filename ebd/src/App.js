@@ -13,12 +13,15 @@ import ConstructionsPage from "./Pages/ConstructionsPage";
 import AdminLogin from "./Pages/admin/Login";
 import Home from "./Pages/admin/Home";
 import Project from "./Pages/admin/Project";
+import AddProject from "./Pages/admin/AddProject";
+import Blog from "./Pages/admin/Blog";
+import AddBlogpage from "./Pages/admin/AddBlog";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Routes>
+        <Routes> 
           <Route exact path="/" element={<HomePage />}></Route>
           <Route exact path="/about" element={<AboutPage />}></Route>
           <Route exact path="/projects" element={<ProjectsPage />}></Route>
@@ -39,8 +42,11 @@ function App() {
 
           {/* admin pages routes */}
           <Route exact path="/admin-login" element={<AdminLogin />}></Route>
-          <Route exact path="/admin-home" element={<Home/>}></Route>
-          <Route exact path="/view-all-projects" element={<Project/>}></Route>
+          <Route exact path="/admin-home" element={<Home />}></Route>
+          <Route exact path="/view-all-projects" element={<Project />}></Route>
+          <Route exact path="/add-project" element={<AddProject />}></Route>
+          <Route exact path="/view-all-blog" element={<Blog />}></Route>
+          <Route exact path="/Add-Blog" element={<AddBlogpage/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

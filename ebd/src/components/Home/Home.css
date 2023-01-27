@@ -264,6 +264,7 @@
     }
     .enquirySection span{
         margin-top: 0;
+        margin-bottom: 2rem;
     }
     .enquirySection{
         height: 40vh;
