@@ -31,8 +31,8 @@ function Header() {
 
     return (
         <div className='headerSection' >
-            <div onClick={() => navigate('/')} className='logoSection'>
-                <img className='logo' style={{ width: '10rem' }} src={logo} alt="" />
+            <div  className='logoSection'>
+                <img onClick={() => navigate('/')} className='logo' style={{ width: '10rem' }} src={logo} alt="" />
             </div>
 
             <div className='navSection' style={{ height: responsive ? '80vh' : '' }}>
@@ -40,7 +40,16 @@ function Header() {
                 <div className="navLinks">
                     <span ><NavLink to='/'> HOME &nbsp;<span className='dot'>.</span></NavLink></span><div className='line'></div>
                     <span><NavLink to='/about' > ABOUT US &nbsp;<span className='dot'>.</span></NavLink></span><div className='line'></div>
-                    <span className='dropdown'><NavLink className='dropNav'> OUR PROJECTS &nbsp;<span className='dot'>.</span></NavLink>
+                    <span className='dropdown mobdropdown ' ><a className='dropNav'> OUR PROJECTS &nbsp;<span className='dot'>.</span></a>
+                        <ul className='dropdownList'>
+                            <li><NavLink to='/projects'>Projects</NavLink></li>
+                            <li><NavLink to='/constructions'>Ebd Constructions</NavLink></li>
+                            <li><NavLink to='/designHouse'>Ebd Design House</NavLink></li>
+                            <li><NavLink to='/builders'>Ebd Builders</NavLink></li>
+                        </ul>
+
+                    </span>
+                    <span className='dropdown deskdropdown' ><NavLink to='/projects' className='dropNav'> OUR PROJECTS &nbsp;<span className='dot'>.</span></NavLink>
                         <ul className='dropdownList'>
                             <li><NavLink to='/constructions'>Ebd Constructions</NavLink></li>
                             <li><NavLink to='/designHouse'>Ebd Design House</NavLink></li>
