@@ -10,7 +10,7 @@ import GroupSection from '../Home/GroupSection'
 
 function About() {
   return (
-    <div>
+    <div style={{width:'100%',overflowX:'hidden'}}>
       <Header></Header>
 
       <GroupSection></GroupSection>

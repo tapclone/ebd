@@ -26,14 +26,14 @@
     border-radius: 10px 10px 10px 0px;
     margin-bottom: 2rem;
 }
-.plane{
+.blogCard:nth-child(even){
     background-color: transparent !important;
     border: 1px solid #0E8B8F;
 }
-.plane .contentSectionBlogCard h2{
+.blogCard:nth-child(even) .contentSectionBlogCard h2{
     color: #0E8B8F !important;
 }
-.plane .contentSectionBlogCard p{
+.blogCard:nth-child(even) .contentSectionBlogCard p{
     color: #0E8B8F !important;
 }
 .blogCard .imgSectionBlogCard{
@@ -79,14 +79,17 @@
         width: 50%;
         padding: 1rem;
         border-radius: 10px;
-        min-width: 15rem;
+        min-width: 20rem;
+        
     }
     .blogCard .imgSectionBlogCard{
         width: 100%;
     }
     .blogCard .contentSectionBlogCard{
         width: 100%;
+        padding: 0 ;
         padding-top: 1rem;
+        
     }
     .contentSectionBlogCard p{
         width: 100%;
@@ -113,5 +116,13 @@
 @media (max-width:650px) {
     .blogSectionS{
         width: 90%;
+    }
+}
+.readMoreC{
+    cursor: pointer;
+}
+@media (max-width:350px) {
+    .blogCard{
+        min-width: 17rem;
     }
 }

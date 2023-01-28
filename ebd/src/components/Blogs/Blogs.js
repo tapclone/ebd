@@ -9,10 +9,10 @@ import GroupSection from '../Home/GroupSection'
 function Blogs() {
   const navigate=useNavigate()
   return (
-    <div>
+    <div style={{width:'100%',overflow:'hidden'}}>
       <GroupSection></GroupSection>
 
-      <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', paddingBottom: '3rem' }}>
+      <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', paddingBottom: '3rem' ,marginTop:'3rem'}}>
 
         <div className='blogH1'>
           <h1 style={{ margin: '0', fontWeight: '500', color: '#0E8B8F', textAlign: 'center', fontSize: '1.2rem' }}>EBD Blogs</h1>

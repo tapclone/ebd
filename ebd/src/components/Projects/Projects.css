@@ -23,7 +23,7 @@
 .imageSection{
     background: url(../../assets/Asset\ 4@300.png);
     width: 65%;
-    height: 27rem;
+    aspect-ratio: 1/0.8;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,25 +47,15 @@
     margin-left: 1rem;
     
 }
-.detailsSection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 65%;
-}
-.detailsSection div{
-    margin-top: 0.5rem;
-    display: grid;
-    grid-template-columns: auto;
-    row-gap: 5px;
-}
-.colmn-2 span{
+
+
+/* .colmn-2 span{
     font-weight: 600;
     color: rgb(82, 81, 81);
-}
+} */
 .Image-360Section{
     width: 100%;
-    height: 35rem;
+    aspect-ratio: 1/0.5;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -73,7 +63,10 @@
 .Image-360Section img{
     position: absolute;
     width: 50%;
-    top: 8%;
+    top: 50%;
+    left: 50%;
+    min-width: 20rem;
+    transform: translate(-50%,-50%);
     align-self: center;
     justify-content: center;
 }
@@ -295,3 +288,67 @@ html{
 .cardMain1:hover .cardMain{
     transform: rotateY(180deg);
   }
+
+@media (max-width:900px) {
+    .singleProjectSection div,.singleProjDetailHeading,.projectDetail{
+        width: 80% !important;
+    }
+}
+
+@media (max-width:550px) {
+    .singleProjectSection div,.singleProjDetailHeading,.projectDetail{
+        width: 90% !important;
+    }
+    .Image-360Section{
+        aspect-ratio: 1/0.8;
+    }
+}
+
+.projectDetail{
+    width: 65%;
+    display: flex;
+}
+.projectDetail .colmn1{
+    width: 60%;
+}
+.projectDetail .colmn2{
+    width: 40%;
+}
+.singleProjDetailHeading p{
+    font-weight: 500 !important;
+}
+.dtl{
+    font-weight: 500 !important;
+    color: rgba(48, 48, 48,0.8) !important;
+}
+.colmn2 div:nth-child(even) span{
+    color: #0E8B8F !important;
+    font-weight: 500 !important;
+
+}
+.colmn2 div:nth-child(odd) span{
+    font-weight: 500 !important;
+    color: rgba(48, 48, 48,0.8) !important;
+}
+@media (max-width:650px) {
+    .projectDetail{
+        flex-direction: column !important;
+        padding-left: 10%;
+    }
+    .singleProjDetailHeading{
+        padding-left: 10%;
+    }
+    .projectDetail .colmn1,.colmn2{
+        width: 100% !important;
+
+    }
+    .colmn2{
+        margin-top: 2rem;
+    }
+}
+@media (max-width:420px) {
+    .projectDetail,.singleProjDetailHeading{
+        padding-left: 0;
+    }
+    
+}

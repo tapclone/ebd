@@ -17,6 +17,7 @@
     height: 1.7rem;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
     
 }
 .groupSectionBtn span{
@@ -41,4 +42,7 @@
     .groupSection .slick-track{
         width: 100% !important;
     }
+}
+.groupSectionBtn:hover{
+    background-color: #1f7679;
 }

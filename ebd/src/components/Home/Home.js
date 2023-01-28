@@ -15,7 +15,7 @@ import GroupSection from './GroupSection'
 
 function Home() {
   return (
-    <div style={{overflowX:'hidden'}}>
+    <div style={{width:'100%',overflowX:'hidden'}}>
       <Header></Header>
       <GroupSection></GroupSection>
 

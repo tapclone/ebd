@@ -8,10 +8,10 @@ import GroupSection from '../Home/GroupSection'
 
 function Contact() {
   return (
-    <div>
+    <div className='contact' style={{width:'100%'}}>
       <GroupSection></GroupSection>
 
-      <section style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', paddingBottom: '3rem' }}>
+      <section style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', paddingBottom: '3rem' ,marginTop:'4rem'}}>
         <div className='contactSection'>
           <div className='logoSectionContact'>
             <svg style={{ width: '75%',minWidth:'10rem' }} id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 50 216 130" >

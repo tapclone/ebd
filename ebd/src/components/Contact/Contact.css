@@ -141,6 +141,9 @@
     }
 }
 @media (max-width:650px) {
+    .contact{
+       overflow-x: hidden !important;
+    }
     .contactSection,.mapSection{
         width: 80% !important;
     }

@@ -1,9 +1,9 @@
 .footerSection{
     width: 100%;
-    height: 15rem;
+    height: fit-content;
+    padding-bottom: 2%;
     background-color: rgb(234 234 234);
     display: flex;
-    padding: 3% 0;
 }
 .footerSection .logoSection{
     width: 60%;
@@ -15,9 +15,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 3%;
 }
 .footerSection .contactSectionF div{
     width: 75%;
+    
 }
 
 .footerSocialMedia svg:hover .cls-1{
@@ -47,7 +49,7 @@
         margin-top: -2rem;
     }
     .footerSection .logoSection{
-        width: 40%;
+        width: 50%;
         padding-left: 10%;
     }
     .footerSection .contactSectionF{
