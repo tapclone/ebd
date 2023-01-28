@@ -6,17 +6,14 @@ import avatar from '../../assets/Asset 1@300.png'
 import './About.css'
 import groupMobile from '../../assets/videos/EBD mobile gif.mp4'
 import group from '../../assets/videos/EBD intro.mp4'
+import GroupSection from '../Home/GroupSection'
 
 function About() {
   return (
     <div>
       <Header></Header>
 
-      <section className='groupSection' >
-        <video className='groupDesc' autoPlay muted loop src={group}></video>
-        <video className='groupMobile' src={groupMobile} autoPlay muted loop></video>
-
-      </section>
+      <GroupSection></GroupSection>
 
       <section className='aboutSection' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', marginTop: '4rem', marginBottom: '5rem' }}>
         <div className='section1Abt'>

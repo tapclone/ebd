@@ -40,23 +40,8 @@ function Header() {
                 <div className="navLinks">
                     <span ><NavLink to='/'> HOME &nbsp;<span className='dot'>.</span></NavLink></span><div className='line'></div>
                     <span><NavLink to='/about' > ABOUT US &nbsp;<span className='dot'>.</span></NavLink></span><div className='line'></div>
-                    <span className='dropdown mobdropdown ' ><a className='dropNav'> OUR PROJECTS &nbsp;<span className='dot'>.</span></a>
-                        <ul className='dropdownList'>
-                            <li><NavLink to='/projects'>Projects</NavLink></li>
-                            <li><NavLink to='/constructions'>Ebd Constructions</NavLink></li>
-                            <li><NavLink to='/designHouse'>Ebd Design House</NavLink></li>
-                            <li><NavLink to='/builders'>Ebd Builders</NavLink></li>
-                        </ul>
-
-                    </span>
-                    <span className='dropdown deskdropdown' ><NavLink to='/projects' className='dropNav'> OUR PROJECTS &nbsp;<span className='dot'>.</span></NavLink>
-                        <ul className='dropdownList'>
-                            <li><NavLink to='/constructions'>Ebd Constructions</NavLink></li>
-                            <li><NavLink to='/designHouse'>Ebd Design House</NavLink></li>
-                            <li><NavLink to='/builders'>Ebd Builders</NavLink></li>
-                        </ul>
-
-                    </span><div className='line lineI'></div>
+                    <span><NavLink to='/projects'>Projects</NavLink></span><div className='line'></div>
+                    
                     <span ><NavLink to='/blogs'> BLOGS &nbsp;<span className='dot'>.</span></NavLink></span><div className='line'></div>
                     <span ><NavLink to='/contact'> CONTACT US &nbsp;<span className='dot'>.</span></NavLink></span><div className='line'></div>
                 </div>

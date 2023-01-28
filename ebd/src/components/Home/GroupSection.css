@@ -1,0 +1,44 @@
+
+.groupSection .slick-slider{
+    width: 100%;
+    z-index: 10;
+    margin-top: -8%;
+}
+@media (max-width:650px) {
+    .groupSection .slick-slider{
+        margin-top: -15%;
+    }
+}
+.groupSectionBtn{
+    background-color: #0e8b8f;
+    width: 11rem;
+    align-items: center;
+    justify-content: center;
+    height: 1.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.groupSectionBtn span{
+    color: white;
+    font-weight: 400 !important;
+}
+.groupSectionBtn img{
+    width: 3rem;
+}
+.groupSection .slick-slide{
+    width: 15rem !important;
+}
+.groupSectionBtnMain{
+    width: fit-content !important;
+}
+.groupSection .slick-track{
+    display: flex;
+    justify-content: center;
+    
+}
+@media (min-width:650px) {
+    .groupSection .slick-track{
+        width: 100% !important;
+    }
+}

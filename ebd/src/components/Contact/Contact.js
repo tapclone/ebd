@@ -4,14 +4,12 @@ import group from '../../assets/videos/EBD intro.mp4'
 import groupMobile from '../../assets/videos/EBD mobile gif.mp4'
 import logo from '../../assets/logo.svg'
 import EnquiryForm from '../Home/EnquiryForm'
+import GroupSection from '../Home/GroupSection'
 
 function Contact() {
   return (
     <div>
-      <section className='groupSection' >
-        <video className='groupDesc' autoPlay muted loop src={group}></video>
-        <video className='groupMobile' src={groupMobile} autoPlay muted loop></video>
-      </section>
+      <GroupSection></GroupSection>
 
       <section style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', paddingBottom: '3rem' }}>
         <div className='contactSection'>

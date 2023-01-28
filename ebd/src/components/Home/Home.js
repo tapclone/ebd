@@ -10,17 +10,14 @@ import scale1 from '../../assets/videos/set square 2.mp4'
 import scale2 from '../../assets/videos/set square.mp4'
 import group from '../../assets/videos/EBD intro.mp4'
 import groupMobile from '../../assets/videos/EBD mobile gif.mp4'
+import GroupSection from './GroupSection'
 
 
 function Home() {
   return (
     <div style={{overflowX:'hidden'}}>
       <Header></Header>
-      <section className='groupSection' >
-        <video className='groupDesc' autoPlay muted loop src={group}></video>
-        <video className='groupMobile' src={groupMobile} autoPlay muted loop></video>
-
-      </section>
+      <GroupSection></GroupSection>
 
 
       <section style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
