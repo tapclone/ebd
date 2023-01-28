@@ -16,7 +16,7 @@ module.exports.connect = function (done) {
     const dbname = process.env.DATABASE || "EBD";
     state.db = data.db(dbname);
 
-    //Add return statement to call done callback after connection is established 
+    //Add return statement to call done callback after connection is established  
     return done();  
   });  
 };  
