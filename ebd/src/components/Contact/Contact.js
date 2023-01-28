@@ -54,7 +54,7 @@ function Contact() {
       </section >
 
 
-  <section style={{display:'flex',alignItems:'center',justifyContent:'center',padding:'2rem 0'}}>
+  <section style={{display:'flex',alignItems:'center',justifyContent:'center',padding:'2rem 0',paddingBottom:'0'}}>
 
         <div className='newsLetterSection' style={{display:'flex',alignItems:'center',flexDirection:'column'}}>
           <h1 style={{textAlign:'center',color:'#0E8B8F',margin:'0',marginBottom:'5px'}}>Request A Call Back</h1>
@@ -62,7 +62,7 @@ function Contact() {
           <div className='newsLetter'>
             <div className='newsLetter1'>
               <h2 style={{color:'white',margin:'0'}}>Join Our Monthly Newsletter</h2>
-              <p style={{textAlign:'justify',color:'white',margin:'0'}}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. </p>
+              <p style={{textAlign:'justify',color:'white',margin:'0',marginBottom:'2rem'}}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. </p>
               <div className='contactInputDiv'>
                 <input type="text" placeholder='Your Email' />
                 <span>Subscribe</span>
@@ -88,7 +88,6 @@ function Contact() {
         <h3>How can we help you?</h3>
         <div className='enquiryInput' style={{position:'relative',display:'flex'}}>
         <input type="text" placeholder='Enter your email'/>
-        <svg className='dropInput'  xmlns="http://www.w3.org/2000/svg" style={{width:'1rem',position:'absolute',alignSelf:'center',right:'2px',background:'#0E8B8F'}} viewBox="0 0 25.91 12.32"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polyline class="cls-1" style={{fill:'none',stroke:'#fff',strokeWidth:'2',strokeMiterlimit:'10'}} points="0.33 0.38 13.15 11.64 25.57 0.38"/></g></g></svg>
         </div>
         
          <br />

@@ -4,6 +4,7 @@
     padding-bottom: 2%;
     background-color: rgb(234 234 234);
     display: flex;
+    padding-top: 2rem;
 }
 .footerSection .logoSection{
     width: 60%;

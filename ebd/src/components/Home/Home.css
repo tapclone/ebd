@@ -452,9 +452,6 @@
 }
 
 @media (max-width:450px) {
-    .enquirySection{
-        padding-top: 1rem;
-    }
     .dividerSection video {
         left: -25%;
     }
