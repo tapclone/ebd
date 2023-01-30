@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import EnquiryForm from '../Home/EnquiryForm'
 import image from '../../assets/Asset 3@300.png'
 import video from '../../assets/videos/ebd pc.mp4'
+import axios from 'axios'
 
 function DesignHouse() {
     const navigate = useNavigate()
+    const [designs, setDesigns] = useState([])
+    useEffect(() => {
+        (async function () {
+            await axios.get("/api/admin/view-all-project").then((res) => {
+                setDesigns(res.data);
+
+                const design = res.data.filter(
+                    (character) => character.Category === "EBD Design House"
+                );
+                setDesigns(design);
+
+
+            });
+        })();
+    }, []);
     return (
         <div>
             <section className='projSec' style={{ marginTop: '8rem', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
@@ -32,145 +48,76 @@ function DesignHouse() {
                 <div className='constructionH1'>
                     <h1 style={{ margin: '0', fontWeight: '500', color: '#0E8B8F', textAlign: 'center', fontSize: '1.2rem' }}>EBD Design House</h1>
                 </div>
-                <p style={{textAlign:'justify'}}>That's where we stand out</p>
+                <p style={{ textAlign: 'justify' }}>That's where we stand out</p>
 
                 <div className='projectsGrid projectSectionMain' style={{ display: 'grid', width: '100%', gridTemplateColumns: 'auto auto auto', placeItems: 'center', placeContent: 'center', columnGap: '5%', rowGap: '2rem', marginTop: "2rem" }}>
-                    <div className='cardMain1'>
-                        <div className='cardMain' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <div className='card card1' >
-                                <img src={image} alt="" />
-                                <p style={{ margin: '0', fontWeight: 'lighter', color: 'white', textAlign: 'center', fontSize: '0.8rem', marginTop: '10px' }}>BABIL ASPENGLOW</p>
-                                <div style={{ background: 'white', width: '3rem', height: '1px', marginTop: '4px' }}></div>
-                            </div>
+                    {designs?.map((items) => {
 
-                            <div className='card card3'>
-                                <p style={{ maxWidth: '80%', textAlign: 'justify', hyphens: 'auto', marginTop: '30%', color: 'white', fontWeight: 'lighter', opacity: '0.8' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-                                <span className='readMore' onClick={() => navigate('/project')} style={{ color: 'white' }}>READ MORE</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='cardMain1'>
-                        <div className='cardMain' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <div className='card card1' >
-                                <img src={image} alt="" />
-                                <p style={{ margin: '0', fontWeight: 'lighter', color: 'white', textAlign: 'center', fontSize: '0.8rem', marginTop: '10px' }}>BABIL ASPENGLOW</p>
-                                <div style={{ background: 'white', width: '3rem', height: '1px', marginTop: '4px' }}></div>
-                            </div>
+                        return (
+                            <div className="cardMain1">
+                                <div
+                                    className="cardMain"
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                    }}
+                                >
+                                    <div className="card card1">
+                                        <img src={items.Image[0]?.url} alt="" />
+                                        <p
+                                            style={{
+                                                margin: "0",
+                                                fontWeight: "lighter",
+                                                color: "white",
+                                                textAlign: "center",
+                                                fontSize: "0.8rem",
+                                                marginTop: "10px",
+                                            }}
+                                        >
+                                            {items.Name}
+                                        </p>
+                                        <div
+                                            style={{
+                                                background: "white",
+                                                width: "3rem",
+                                                height: "1px",
+                                                marginTop: "4px",
+                                            }}
+                                        ></div>
+                                    </div>
 
-                            <div className='card card3'>
-                                <p style={{ maxWidth: '80%', textAlign: 'justify', hyphens: 'auto', marginTop: '30%', color: 'white', fontWeight: 'lighter', opacity: '0.8' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-                                <span className='readMore' onClick={() => navigate('/project')} style={{ color: 'white' }}>READ MORE</span>
+                                    <div className="card card3">
+                                        <p
+                                            style={{
+                                                maxWidth: "80%",
+                                                textAlign: "justify",
+                                                hyphens: "auto",
+                                                marginTop: "30%",
+                                                color: "white",
+                                                fontWeight: "lighter",
+                                                opacity: "0.8",
+                                            }}
+                                        >
+                                            {" "}
+                                            {items.Description.slice(0, 200)}{" "}
+                                        </p>
+                                        <span
+                                            className="readMore"
+                                            onClick={() => navigate(`/project/${items._id}`)}
+                                            style={{ color: "white" }}
+                                        >
+                                            READ MORE
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className='cardMain1'>
-                        <div className='cardMain' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <div className='card card1' >
-                                <img src={image} alt="" />
-                                <p style={{ margin: '0', fontWeight: 'lighter', color: 'white', textAlign: 'center', fontSize: '0.8rem', marginTop: '10px' }}>BABIL ASPENGLOW</p>
-                                <div style={{ background: 'white', width: '3rem', height: '1px', marginTop: '4px' }}></div>
-                            </div>
-
-                            <div className='card card3'>
-                                <p style={{ maxWidth: '80%', textAlign: 'justify', hyphens: 'auto', marginTop: '30%', color: 'white', fontWeight: 'lighter', opacity: '0.8' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-                                <span className='readMore' onClick={() => navigate('/project')} style={{ color: 'white' }}>READ MORE</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div className='cardMain1'>
-                        <div className='cardMain' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <div className='card card1' >
-                                <img src={image} alt="" />
-                                <p style={{ margin: '0', fontWeight: 'lighter', color: 'white', textAlign: 'center', fontSize: '0.8rem', marginTop: '10px' }}>BABIL ASPENGLOW</p>
-                                <div style={{ background: 'white', width: '3rem', height: '1px', marginTop: '4px' }}></div>
-                            </div>
-
-                            <div className='card card3'>
-                                <p style={{ maxWidth: '80%', textAlign: 'justify', hyphens: 'auto', marginTop: '30%', color: 'white', fontWeight: 'lighter', opacity: '0.8' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-                                <span className='readMore' onClick={() => navigate('/project')} style={{ color: 'white' }}>READ MORE</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='cardMain1'>
-                        <div className='cardMain' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <div className='card card1' >
-                                <img src={image} alt="" />
-                                <p style={{ margin: '0', fontWeight: 'lighter', color: 'white', textAlign: 'center', fontSize: '0.8rem', marginTop: '10px' }}>BABIL ASPENGLOW</p>
-                                <div style={{ background: 'white', width: '3rem', height: '1px', marginTop: '4px' }}></div>
-                            </div>
-
-                            <div className='card card3'>
-                                <p style={{ maxWidth: '80%', textAlign: 'justify', hyphens: 'auto', marginTop: '30%', color: 'white', fontWeight: 'lighter', opacity: '0.8' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-                                <span className='readMore' onClick={() => navigate('/project')} style={{ color: 'white' }}>READ MORE</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='cardMain1'>
-                        <div className='cardMain' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <div className='card card1' >
-                                <img src={image} alt="" />
-                                <p style={{ margin: '0', fontWeight: 'lighter', color: 'white', textAlign: 'center', fontSize: '0.8rem', marginTop: '10px' }}>BABIL ASPENGLOW</p>
-                                <div style={{ background: 'white', width: '3rem', height: '1px', marginTop: '4px' }}></div>
-                            </div>
-
-                            <div className='card card3'>
-                                <p style={{ maxWidth: '80%', textAlign: 'justify', hyphens: 'auto', marginTop: '30%', color: 'white', fontWeight: 'lighter', opacity: '0.8' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-                                <span className='readMore' onClick={() => navigate('/project')} style={{ color: 'white' }}>READ MORE</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className='cardMain1'>
-                        <div className='cardMain' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <div className='card card1' >
-                                <img src={image} alt="" />
-                                <p style={{ margin: '0', fontWeight: 'lighter', color: 'white', textAlign: 'center', fontSize: '0.8rem', marginTop: '10px' }}>BABIL ASPENGLOW</p>
-                                <div style={{ background: 'white', width: '3rem', height: '1px', marginTop: '4px' }}></div>
-                            </div>
-
-                            <div className='card card3'>
-                                <p style={{ maxWidth: '80%', textAlign: 'justify', hyphens: 'auto', marginTop: '30%', color: 'white', fontWeight: 'lighter', opacity: '0.8' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-                                <span className='readMore' onClick={() => navigate('/project')} style={{ color: 'white' }}>READ MORE</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='cardMain1'>
-                        <div className='cardMain' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <div className='card card1' >
-                                <img src={image} alt="" />
-                                <p style={{ margin: '0', fontWeight: 'lighter', color: 'white', textAlign: 'center', fontSize: '0.8rem', marginTop: '10px' }}>BABIL ASPENGLOW</p>
-                                <div style={{ background: 'white', width: '3rem', height: '1px', marginTop: '4px' }}></div>
-                            </div>
-
-                            <div className='card card3'>
-                                <p style={{ maxWidth: '80%', textAlign: 'justify', hyphens: 'auto', marginTop: '30%', color: 'white', fontWeight: 'lighter', opacity: '0.8' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-                                <span className='readMore' onClick={() => navigate('/project')} style={{ color: 'white' }}>READ MORE</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='cardMain1'>
-                        <div className='cardMain' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <div className='card card1' >
-                                <img src={image} alt="" />
-                                <p style={{ margin: '0', fontWeight: 'lighter', color: 'white', textAlign: 'center', fontSize: '0.8rem', marginTop: '10px' }}>BABIL ASPENGLOW</p>
-                                <div style={{ background: 'white', width: '3rem', height: '1px', marginTop: '4px' }}></div>
-                            </div>
-
-                            <div className='card card3'>
-                                <p style={{ maxWidth: '80%', textAlign: 'justify', hyphens: 'auto', marginTop: '30%', color: 'white', fontWeight: 'lighter', opacity: '0.8' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
-                                <span className='readMore' onClick={() => navigate('/project')} style={{ color: 'white' }}>READ MORE</span>
-                            </div>
-                        </div>
-                    </div>
+                        );
+                    })}
 
                 </div>
 
-                <span className='readMoreC'>Read More</span>
+                {/* <span className='readMoreC'>Read More</span> */}
             </section>
             <EnquiryForm></EnquiryForm>
 

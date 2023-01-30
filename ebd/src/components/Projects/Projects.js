@@ -17,6 +17,7 @@ function Projects() {
   const [Design, setDesign] = useState([]);
   const [Constructions, setConstructions] = useState([]);
   const [Builders, setBuilders] = useState([]);
+
   useEffect(() => {
     (async function () {
       await axios.get("/api/admin/view-all-project").then((res) => {
@@ -277,7 +278,7 @@ function Projects() {
         ></div>
 
         <Slider {...settings}>
-          {Design?.map((items) => {
+          {Constructions?.map((items) => {
             console.log(items, "dkvkjd");
             return (
               <div className="cardMain1">
