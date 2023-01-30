@@ -5,6 +5,7 @@ function Home() {
   return (
     <div>
       <Sidebar/>
+      <h4>Welcome To Admin Home Page</h4>
     </div>
   )
 }

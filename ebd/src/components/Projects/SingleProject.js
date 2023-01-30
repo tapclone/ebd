@@ -12,15 +12,20 @@ function SingleProject() {
   const [data, setData] = useState([]);
   const [image, setImage] = useState([]);
   const [head, setHead] = useState([]);
+  const [embedId, setembedId] = useState();
 
   useEffect(() => {
     (async function () {
-      await axios
-        .get(`/api/admin/view-single-project/${params.id}`)
-        .then((res) => {
-          setImage(res.data.Image);
-          setData(res.data);
-        });
+      try {
+        const { data } = await axios.get(
+          `/api/admin/view-single-project/${params.id}`
+        );
+        setImage(data.Image);
+        setData(data);
+        setembedId(data.Video);
+      } catch (error) {
+        console.log(error);
+      }
     })();
   }, []);
   return (
@@ -141,7 +146,17 @@ function SingleProject() {
         <div className="Image-360Section">
           <div style={{ height: "50%" }}></div>
           <div style={{ height: "50%", background: "rgb(234 234 234)" }}></div>
-          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&controls=0"></iframe>
+          <div className="video-responsive">
+            <iframe
+              width="853"
+              height="480"
+              src={`https://www.youtube.com/embed/${embedId}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title="Embedded youtube"
+            />
+          </div>
         </div>
       </section>
 

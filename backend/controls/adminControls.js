@@ -51,7 +51,6 @@ const viewAllBlog = asyncHandler(async (req, res) => {
     .collection(collection.BLOG_COLLECTION)
     .find()
     .toArray();
-
   if (viewAllBlog) {
     res.status(200).send(viewAllBlog);
   } else {
@@ -131,12 +130,37 @@ const UploadImage = asyncHandler(async (req, res) => {
         console.log(obj);
         res.status(200).json(obj);
       })
+
       .catch((error) => {
         res.status(400).json("Something went wrong");
       });
   }
 });
-
+const ViewSingleProject = asyncHandler(async (req, res) => {
+  const id = req.params.id;
+  console.log(id);
+  const SingleProject = await db
+    .get()
+    .collection(collection.PROJECT_COLLECTION)
+    .findOne({ _id: ObjectId(id) });
+  if (SingleProject) {
+    res.status(200).json(SingleProject);
+  } else {
+    res.status(400).json("Something went Wrong");
+  }
+});
+const ViewSingleBlog = asyncHandler(async (req, res) => {
+  const id = req.params.id;
+  const singleBlog = await db
+    .get()
+    .collection(collection.BLOG_COLLECTION)
+    .findOne({ _id: ObjectId(id) });
+  if (singleBlog) {
+    res.status(200).json(singleBlog);
+  } else {
+    res.status(400).json("Something Went Wrong");
+  }
+});
 module.exports = {
   Login,
   AddBlog,
@@ -146,4 +170,6 @@ module.exports = {
   DeleteProject,
   ViewAllProject,
   UploadImage,
+  ViewSingleProject,
+  ViewSingleBlog,
 };

@@ -3,8 +3,8 @@ const AWS = require("aws-sdk");
 let ACCESS_KEY=process.env.ACCESS_KEY
 let SECRET_ACCESS_KEY=process.env.SECRET_ACCESS_KEY
 const s3 = new AWS.S3({
-  accessKeyId:ACCESS_KEY,
-  secretAccessKey:SECRET_ACCESS_KEY,
+  accessKeyId:"AKIA43UOWL5CWORKHLM2",
+  secretAccessKey:"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",
 });
 
 module.exports.uploadS3 = (fileData) => {

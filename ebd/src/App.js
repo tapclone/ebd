@@ -18,6 +18,7 @@ import Project from "./Pages/admin/Project";
 import AddProject from "./Pages/admin/AddProject";
 import Blog from "./Pages/admin/Blog";
 import AddBlogpage from "./Pages/admin/AddBlog";
+import SingleBlogPage from "./Pages/BlogSinglePage"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route exact path="/about" element={<AboutPage />}></Route>
           <Route exact path="/projects" element={<ProjectsPage />}></Route>
           <Route exact path="/blogs" element={<BlogPage />}></Route>
+          <Route exact path="/blog/:id" element={<SingleBlogPage />}></Route>
           <Route exact path="/contact" element={<ContactPage />}></Route>
           <Route exact path="/project/:id" element={<SingleProjectPage />}></Route>
           <Route exact path="/builders" element={<BuildersPage />}></Route>
