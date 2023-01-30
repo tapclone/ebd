@@ -60,7 +60,7 @@
     display: flex;
     flex-direction: column;
 }
-.Image-360Section img{
+.Image-360Section iframe{
     position: absolute;
     width: 50%;
     top: 50%;
@@ -290,13 +290,13 @@ html{
   }
 
 @media (max-width:900px) {
-    .singleProjectSection div,.singleProjDetailHeading,.projectDetail{
+    .singleProjectSection img,.singleProjDetailHeading,.projectDetail{
         width: 80% !important;
     }
 }
 
 @media (max-width:550px) {
-    .singleProjectSection div,.singleProjDetailHeading,.projectDetail{
+    .singleProjectSection img,.singleProjDetailHeading,.projectDetail{
         width: 90% !important;
     }
     .Image-360Section{
@@ -352,3 +352,4 @@ html{
     }
     
 }
+

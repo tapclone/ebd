@@ -29,7 +29,13 @@ function AddProject() {
     try {
       const { data } = await axios.post("/api/admin/image-uploading", formData);
       setImageLoading(false);
-      setImages(data);
+      if (data[0]) {
+        setImageLoading(false);
+        setImages(data);
+      } else {
+        setImageLoading(false);
+        images.push(data);
+      }
     } catch (error) {
       setImageLoading(false);
       console.log(error);
@@ -89,7 +95,8 @@ function AddProject() {
                 FileUploader(e);
               }}
               placeholder="Enter Feature Name"
-              required
+              
+              multiple
             />
             <div class="input-icon">
               <i class="fa fa-key"></i>

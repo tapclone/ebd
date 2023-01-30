@@ -37,7 +37,7 @@ function Project() {
             },
           };
           await axios
-            .delete(`/api/admin/delete-blog/${id}`,config)
+            .delete(`/api/admin/delete-blog/${id}`, config)
             .then((res) => {
               setLoading(false);
               setLoading(true);
@@ -65,7 +65,7 @@ function Project() {
   return (
     <div
       className="tableMain"
-      style={{marginLeft:"5rem",marginTop:"4rem"}}
+      style={{ marginLeft: "5rem", marginTop: "4rem" }}
     >
       <button
         className="addBtn"
@@ -85,11 +85,12 @@ function Project() {
         ADD BLOG
       </button>
       <div class="header_fixed">
-        <table >
+        <table>
           <thead>
             <tr>
               <th>S No.</th>
               <th>Image</th>
+              <th>Category</th>
               <th>Heading</th>
               <th>Description</th>
               <th>Action</th>
@@ -97,14 +98,14 @@ function Project() {
           </thead>
           <tbody>
             {Project.map((items, index) => {
-              
               return (
                 <tr key={index}>
                   <td style={{ textAlign: "center" }}>{index + 1}</td>
                   <td style={{ textAlign: "center" }}>
-                    <img src={items?.Image.url} />
+                    <img src={items?.Image[0].url} />
                   </td>
                   <td style={{ textAlign: "center" }}>{items.Name}</td>
+                  <td style={{ textAlign: "center" }}>{items.Category}</td>
                   <td style={{ textAlign: "center" }}>{items.Description}</td>
                   <td style={{ textAlign: "center" }}>
                     <button
@@ -126,4 +127,3 @@ function Project() {
 }
 
 export default Project;
- 

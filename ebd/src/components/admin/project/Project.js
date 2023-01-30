@@ -99,6 +99,7 @@ function Project() {
               <th>S No.</th>
               <th>Image</th>
               <th>Name</th>
+              <th>Category</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -112,6 +113,7 @@ function Project() {
                     <img src={items?.Image[0].url} />
                   </td>
                   <td style={{ textAlign: "center" }}>{items.Name}</td>
+                  <td style={{ textAlign: "center" }}>{items.Category}</td>
 
                   <td style={{ textAlign: "center" }}>
                     <button

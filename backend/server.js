@@ -21,7 +21,7 @@ app.use(session({ secret: "key", cookie: { maxAge: 6000000 } }));
 app.use("/api/admin", adminRoutes);
 const PORT = process.env.PORT || 9000;
 db.connect((err) => { 
-  if (err) { 
+  if (err) {   
     console.log("connection error" + err);
   } else {
     console.log("database connected");
