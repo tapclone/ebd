@@ -54,7 +54,7 @@ function Footer() {
                 </div>
                 <div style={{ borderBottom: '1px solid black', paddingTop: '10px', paddingBottom: '15px' }}>
                     <span style={{ fontSize: '1.1rem', color: '#0E8B8F' }}>Location</span><br />
-                    <p style={{ margin: '0', marginTop: '2px' }}>Vattampoyil Gate, near Chemmangadu Police Station, <br />
+                    <p style={{ margin: '0', marginTop: '2px',textAlign:'left' }}>Vattampoyil Gate, near Chemmangadu Police Station, <br />
                         Thekepuram, Kuttichira, Kozhikode, Kerala 673 003
                     </p>
                 </div>

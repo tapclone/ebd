@@ -35,7 +35,7 @@ function Home() {
             <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Accurate <br /> Dimension Transfer</h1> <br />
             <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-            <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p className='sectionp'>Transforming data from one set of dimensions or coordinates to another while maintaining the integrity and accuracy of the information. It includes mathematical transformations, machine learning algorithms, and computer graphics techniques making the data more useful or interpretable for a particular application or analysis.</p>
           </div>
 
         </div>
@@ -48,7 +48,7 @@ function Home() {
             <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F', }}>Inscribing shapes <br /> and arcs</h1> <br />
             <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-            <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p className='sectionp'>For the design and planning of buildings, structures and the spaces around them, Architects use their knowledge of materials, construction techniques, and regulations to create functional, safe, and aesthetically pleasing structures. Perfect inscription of shapes and arcs to construct the buildings and structures designed by architects, we use a variety of tools and materials, such as bricks, concrete, steel, and wood, to build the structure according to the plans and specifications provided by the architect.</p>
           </div>
 
           <div className="respCompasContent">
@@ -76,7 +76,7 @@ function Home() {
             <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Perfect angles <br /> and measures</h1> <br />
             <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-            <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p className='sectionp'>We ensure that the angles and dimensions of a structure are precise and accurate. This is essential for ensuring the stability, safety, and functionality of the structure.</p>
           </div>
         </div>
 
@@ -88,7 +88,7 @@ function Home() {
             <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Providing a<br />straightedge</h1> <br />
             <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-            <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p className='sectionp'>Helping to ensure accuracy and precision in the creation of straight lines and in measuring distances and angles. Drawing straight lines , checking straightness, measuring distances, guiding a cutting tool done precisely.</p>
           </div>
           <div className="respScale1Content">
             <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Providing a  <br /> <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px',marginTop:'1px' }}></div>
@@ -112,7 +112,7 @@ function Home() {
             <h1 className='sectionh1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>Planar angle<br />to a baseline</h1> <br />
             <div className='underLine' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-            <p className='sectionp'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery.</p>
+            <p className='sectionp'> It used to determine the slope of a roof, the incline of a ramp, or the angle of a wall or other vertical surface. By measuring the angle between the baseline and the planar surface, we ensure that the surface is level, or that it has the desired slope or angle.</p>
           </div>
         </div>
       </section>

@@ -47,6 +47,13 @@
     color: #0E8B8F;
 
 }
+@media (max-width:650px) {
+    .enquirySection span {
+        font-size: 1rem;
+        padding: 2px 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+}
 
 .enquirySection input::placeholder {
     color: rgba(142, 142, 142, 0.6);
@@ -83,10 +90,9 @@
 
 .groupMobile {
     display: none;
-    width: 50%;
+    width: 70%;
     margin-top: -5%;
-    min-width: 18rem;
-
+    min-width: 22rem;
 }
 
 .dividerSection {
