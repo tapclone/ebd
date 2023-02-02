@@ -33,11 +33,9 @@ function Constructions() {
                         <video src={video} autoPlay muted loop ></video>
                     </div>
                     <div className="contentSec">
-                        <p style={{ textAlign: 'justify' }}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        <p style={{ textAlign: 'justify' }}>Using high-standard materials, techniques, and processes ensuring that the project meets or exceeds the expectations and requirements of the client, stakeholders, and relevant building codes and standards. It involves effective planning, execution, and monitoring of all aspects of the project, from design to completion, to ensure that the end result is safe, functional, and aesthetically pleasing. Achieving quality work in construction is by the collaboration of a skilled and experienced team of professionals, including architects, engineers, contractors, and craftsmen.
 
-                            <p style={{ textAlign: 'justify' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-
-                            <p style={{ textAlign: 'justify' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            
                         </p>
 
                     </div>

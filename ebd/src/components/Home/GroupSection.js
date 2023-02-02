@@ -60,7 +60,7 @@ function GroupSection() {
                     <div onClick={() => navigate('/builders')} className='groupSectionBtnMain'>
                         <div className='groupSectionBtn' style={{ display: 'flex' }}>
                             <img src={logo} alt="" />
-                            <span>Builders</span>
+                            <span>Developers</span>
                         </div>
                     </div>
 

@@ -27,18 +27,17 @@ function Builders() {
         <div>
             <section className='projSec' style={{ marginTop: '8rem', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                 <div className='constructionH1'>
-                    <h1 style={{ margin: '0', fontWeight: '500', color: '#0E8B8F', textAlign: 'center', fontSize: '1.2rem' }}>EBD Builders</h1>
+                    <h1 style={{ margin: '0', fontWeight: '500', color: '#0E8B8F', textAlign: 'center', fontSize: '1.2rem' }}>EBD Developers</h1>
                 </div>
                 <div className='constructionSection'>
                     <div className="imgSec">
                         <video src={video} autoPlay loop muted></video>
                     </div>
                     <div className="contentSec">
-                        <p style={{ textAlign: 'justify' }}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        <p style={{ textAlign: 'justify' }}>We are professionals responsible for constructing buildings and other structures. We oversee all aspects of a construction project, from planning and design to construction and completion. We typically work with a team of architects, engineers, subcontractors, and labourers to ensure that the project is completed on time, within budget, and to the required standards. <br/> <br/>
+                        We have a thorough understanding of building codes, safety regulations, and construction techniques, as well as strong leadership and management skills to coordinate the work of the various parties involved in a construction project. We work on residential, commercial, or industrial projects, and the size of the projects can range from small renovations to large-scale developments.
 
-                            <p style={{ textAlign: 'justify' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-
-                            <p style={{ textAlign: 'justify' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                           
                         </p>
 
                     </div>

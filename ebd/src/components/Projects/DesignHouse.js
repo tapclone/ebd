@@ -33,12 +33,7 @@ function DesignHouse() {
                         <video src={video} autoPlay muted loop></video>
                     </div>
                     <div className="contentSec">
-                        <p style={{ textAlign: 'justify' }}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-
-                            <p style={{ textAlign: 'justify' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-
-                            <p style={{ textAlign: 'justify' }}> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                        </p>
+                        <p style={{ textAlign: 'justify' }}>We specialize in the creation and production of creative designs in home décor, and accessories. With the support of our extremely talented designers who develop and produce collections for various clients, focusing their requirements and updations in the field. We also offer design consulting services to help clients with product development and branding. One can visualize a dream home or palace before the construction begins, which helps to give a satisfaction in designing their living spaces.</p>
 
                     </div>
                 </div>

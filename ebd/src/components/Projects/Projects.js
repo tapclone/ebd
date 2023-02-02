@@ -180,71 +180,75 @@ function Projects() {
           }}
         ></div>
 
-        <Slider {...settings}>
-          {Design?.map((items) => {
-        
-            return (
-              <div className="cardMain1">
-                <div
-                  className="cardMain"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <div className="card card1">
-                    <img src={items.Image[0]?.url} alt="" />
-                    <p
-                      style={{
-                        margin: "0",
-                        fontWeight: "lighter",
-                        color: "white",
-                        textAlign: "center",
-                        fontSize: "0.8rem",
-                        marginTop: "10px",
-                      }}
-                    >
-                      {items.Name}
-                    </p>
-                    <div
-                      style={{
-                        background: "white",
-                        width: "3rem",
-                        height: "1px",
-                        marginTop: "4px",
-                      }}
-                    ></div>
-                  </div>
 
-                  <div className="card card3">
-                    <p
-                      style={{
-                        maxWidth: "80%",
-                        textAlign: "justify",
-                        hyphens: "auto",
-                        marginTop: "30%",
-                        color: "white",
-                        fontWeight: "lighter",
-                        opacity: "0.8",
-                      }}
-                    >
-                      {" "}
-                      {items.Description.slice(0, 200)}{" "}
-                    </p>
-                    <span
-                      className="readMore"
-                      onClick={() => navigate(`/project/${items._id}`)}
-                      style={{ color: "white" }}
-                    >
-                      READ MORE
-                    </span>
+        <div className="sliderContainer">
+          <Slider {...settings}>
+            {Design?.map((items) => {
+
+              return (
+                <div className="cardMain1">
+                  <div
+                    className="cardMain"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <div className="card card1">
+                      <img src={items.Image[0]?.url} alt="" />
+                      <p
+                        style={{
+                          margin: "0",
+                          fontWeight: "lighter",
+                          color: "white",
+                          textAlign: "center",
+                          fontSize: "0.8rem",
+                          marginTop: "10px",
+                        }}
+                      >
+                        {items.Name}
+                      </p>
+                      <div
+                        style={{
+                          background: "white",
+                          width: "3rem",
+                          height: "1px",
+                          marginTop: "4px",
+                        }}
+                      ></div>
+                    </div>
+
+                    <div className="card card3">
+                      <p
+                        style={{
+                          maxWidth: "80%",
+                          textAlign: "justify",
+                          hyphens: "auto",
+                          marginTop: "30%",
+                          color: "white",
+                          fontWeight: "lighter",
+                          opacity: "0.8",
+                        }}
+                      >
+                        {" "}
+                        {items.Description.slice(0, 200)}{" "}
+                      </p>
+                      <span
+                        className="readMore"
+                        onClick={() => navigate(`/project/${items._id}`)}
+                        style={{ color: "white" }}
+                      >
+                        READ MORE
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </Slider>
+              );
+            })}
+          </Slider>
+        </div>
+
       </section>
 
       <section
@@ -277,71 +281,74 @@ function Projects() {
           }}
         ></div>
 
-        <Slider {...settings}>
-          {Constructions?.map((items) => {
-            console.log(items, "dkvkjd");
-            return (
-              <div className="cardMain1">
-                <div
-                  className="cardMain"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <div className="card card1">
-                    <img src={items.Image[0]?.url} alt="" />
-                    <p
-                      style={{
-                        margin: "0",
-                        fontWeight: "lighter",
-                        color: "white",
-                        textAlign: "center",
-                        fontSize: "0.8rem",
-                        marginTop: "10px",
-                      }}
-                    >
-                      {items.Name}
-                    </p>
-                    <div
-                      style={{
-                        background: "white",
-                        width: "3rem",
-                        height: "1px",
-                        marginTop: "4px",
-                      }}
-                    ></div>
-                  </div>
+        <div className="sliderContainer">
+          <Slider {...settings}>
+            {Constructions?.map((items) => {
+              console.log(items, "dkvkjd");
+              return (
+                <div className="cardMain1">
+                  <div
+                    className="cardMain"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <div className="card card1">
+                      <img src={items.Image[0]?.url} alt="" />
+                      <p
+                        style={{
+                          margin: "0",
+                          fontWeight: "lighter",
+                          color: "white",
+                          textAlign: "center",
+                          fontSize: "0.8rem",
+                          marginTop: "10px",
+                        }}
+                      >
+                        {items.Name}
+                      </p>
+                      <div
+                        style={{
+                          background: "white",
+                          width: "3rem",
+                          height: "1px",
+                          marginTop: "4px",
+                        }}
+                      ></div>
+                    </div>
 
-                  <div className="card card3">
-                    <p
-                      style={{
-                        maxWidth: "80%",
-                        textAlign: "justify",
-                        hyphens: "auto",
-                        marginTop: "30%",
-                        color: "white",
-                        fontWeight: "lighter",
-                        opacity: "0.8",
-                      }}
-                    >
-                      {" "}
-                      {items.Description.slice(0, 200)}{" "}
-                    </p>
-                    <span
-                      className="readMore"
-                      onClick={() => navigate(`/project/${items._id}`)}
-                      style={{ color: "white" }}
-                    >
-                      READ MORE
-                    </span>
+                    <div className="card card3">
+                      <p
+                        style={{
+                          maxWidth: "80%",
+                          textAlign: "justify",
+                          hyphens: "auto",
+                          marginTop: "30%",
+                          color: "white",
+                          fontWeight: "lighter",
+                          opacity: "0.8",
+                        }}
+                      >
+                        {" "}
+                        {items.Description.slice(0, 200)}{" "}
+                      </p>
+                      <span
+                        className="readMore"
+                        onClick={() => navigate(`/project/${items._id}`)}
+                        style={{ color: "white" }}
+                      >
+                        READ MORE
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </Slider>
+              );
+            })}
+          </Slider>
+        </div>
+
       </section>
 
       <section
@@ -362,7 +369,7 @@ function Projects() {
             textAlign: "center",
           }}
         >
-          EBD Builders
+          EBD Developers
         </h1>
         <div
           style={{
@@ -373,6 +380,7 @@ function Projects() {
             marginBottom: "2rem",
           }}
         ></div>
+        <div className="sliderContainer">
         <Slider {...settings}>
           {Builders?.map((items) => {
             return (
@@ -437,6 +445,7 @@ function Projects() {
             );
           })}
         </Slider>
+        </div>
       </section>
 
       <EnquiryForm></EnquiryForm>
