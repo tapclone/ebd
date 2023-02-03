@@ -234,6 +234,7 @@ function Projects() {
                         {" "}
                         {items.Description.slice(0, 200)}{" "}
                       </p>
+                      
                       <span
                         className="readMore"
                         onClick={() => navigate(`/project/${items._id}`)}

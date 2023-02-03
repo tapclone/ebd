@@ -19,7 +19,10 @@ function SingleProject() {
       try {
         const { data } = await axios.get(
           `/api/admin/view-single-project/${params.id}`
+
         );
+        console.log(data);
+
         setImage(data.Image);
         setData(data);
         setembedId(data.Video);

@@ -9,14 +9,11 @@ function SingleProjectPage() {
       setState(false)
     },1500)
   },[])
-  useEffect(()=>{
-    document.documentElement.scrollTop=0;
-  },[state])
   return (
-    <div onLoad={()=>setState(true)} className={state?'blankDiv':''}>
+    <div className={state?'blankDiv':''}>
         <SingleProject></SingleProject>
         {state?<div className='blank'>
-          <img style={{width:'10rem'}} src={logo} alt="" />
+        <img style={{width:'10rem'}} src={logo} alt="" />
         </div>:''}
     </div>
   )
