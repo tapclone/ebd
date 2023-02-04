@@ -7,6 +7,9 @@ import './About.css'
 import groupMobile from '../../assets/videos/EBD mobile gif.mp4'
 import group from '../../assets/videos/EBD intro.mp4'
 import GroupSection from '../Home/GroupSection'
+import coreImage1 from '../../assets/core-team/PNG1.png'
+import coreImage2 from '../../assets/core-team/PNG2.png'
+import coreImage3 from '../../assets/core-team/PNG3.png'
 
 function About() {
   return (
@@ -86,18 +89,18 @@ function About() {
           <div style={{ display: 'grid', gridTemplateColumns: 'auto auto auto', columnGap: '10%', marginTop: '2rem' }}>
 
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'center', textAlign: 'center' }}>
-              <img className='avatar' style={{ width: '10rem', border: '1px solid #0E8B8F', borderRadius: '90px' }} src={avatar} alt="" />
+              <img className='avatar' style={{ width: '10rem', border: '1px solid #0E8B8F', borderRadius: '100%' }} src={coreImage1} alt="" />
               <div style={{ textAlign: 'center' }}>
-                <p style={{ marginBottom: '0', color: '#0E8B8F' }}>MUHAMMAD SHIBILI</p>
+                <p style={{ marginBottom: '0', color: '#0E8B8F' }}>MUHAMMED SHIBILI</p>
                 <p style={{ marginTop: '0' }}>Managing Director</p>
               </div>
 
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'center', textAlign: 'center' }}>
-              <img className='avatar' style={{ width: '10rem', border: '1px solid #0E8B8F', borderRadius: '90px' }} src={avatar} alt="" />
+              <img className='avatar' style={{ width: '10rem', border: '1px solid #0E8B8F', borderRadius: '100%'}} src={coreImage2} alt="" />
               <div style={{ textAlign: 'center' }}>
-                <p style={{ marginBottom: '0', color: '#0E8B8F' }}>MUHAMMAD SHIBILI</p>
+                <p style={{ marginBottom: '0', color: '#0E8B8F' }}>FAZIL AHAMMED</p>
                 <p style={{ marginTop: '0' }}>Managing Director</p>
               </div>
 
@@ -105,9 +108,9 @@ function About() {
 
 
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'center', textAlign: 'center' }}>
-              <img className='avatar' style={{ width: '10rem', border: '1px solid #0E8B8F', borderRadius: '90px' }} src={avatar} alt="" />
+              <img className='avatar' style={{ width: '10rem', border: '1px solid #0E8B8F', borderRadius: '100%' }} src={coreImage3} alt="" />
               <div style={{ textAlign: 'center' }}>
-                <p style={{ marginBottom: '0', color: '#0E8B8F' }}>MUHAMMAD SHIBILI</p>
+                <p style={{ marginBottom: '0', color: '#0E8B8F' }}>MUHAMMED HASHIM</p>
                 <p style={{ marginTop: '0' }}>Managing Director</p>
               </div>
 
@@ -120,7 +123,7 @@ function About() {
 
       </section>
 
-      <section style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '5rem', padding: '0rem 0px 3rem' }}>
+      {/* <section style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '5rem', padding: '0rem 0px 3rem' }}>
         <div className='theTeamSection' style={{ width: '60%' }}>
           <h1 className='theTeamSectionH1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>The Team</h1> <br />
           <div className='theTeamSectionH1' style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
@@ -187,7 +190,7 @@ function About() {
 
 
 
-      </section>
+      </section> */}
 
       <EnquiryForm></EnquiryForm>
       <Footer></Footer>

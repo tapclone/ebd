@@ -288,13 +288,13 @@ html{
   }
 
 @media (max-width:900px) {
-    .singleProjectSection img,.singleProjDetailHeading,.projectDetail{
+    .singleProjectSection img,.singleProjDetailHeading,.projectDetail,.singleProjectSliderDiv{
         width: 80% !important;
     }
 }
 
 @media (max-width:550px) {
-    .singleProjectSection img,.singleProjDetailHeading,.projectDetail{
+    .singleProjectSection img,.singleProjDetailHeading,.projectDetail,.singleProjectSliderDiv{
         width: 90% !important;
     }
     .Image-360Section{
@@ -366,4 +366,17 @@ html{
 .card3 .readMore{
     margin-top: auto;
     margin-bottom: 10%;
+}
+.singleProjectSlider .slick-prev{
+     display: none !important;
+}
+@media (min-width:650px) {
+    .singleProjectSlider img{
+        width: 10rem !important;
+    }
+}
+@media (max-width:555px) {
+    .singleProjectSlider{
+        aspect-ratio: 1/0.4 !important;
+    }
 }
