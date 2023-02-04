@@ -101,7 +101,7 @@ function About() {
               <img className='avatar' style={{ width: '10rem', border: '1px solid #0E8B8F', borderRadius: '100%'}} src={coreImage2} alt="" />
               <div style={{ textAlign: 'center' }}>
                 <p style={{ marginBottom: '0', color: '#0E8B8F' }}>FAZIL AHAMMED</p>
-                <p style={{ marginTop: '0' }}>Managing Director</p>
+                <p style={{ marginTop: '0' }}>Design Director</p>
               </div>
 
             </div>
@@ -111,7 +111,7 @@ function About() {
               <img className='avatar' style={{ width: '10rem', border: '1px solid #0E8B8F', borderRadius: '100%' }} src={coreImage3} alt="" />
               <div style={{ textAlign: 'center' }}>
                 <p style={{ marginBottom: '0', color: '#0E8B8F' }}>MUHAMMED HASHIM</p>
-                <p style={{ marginTop: '0' }}>Managing Director</p>
+                <p style={{ marginTop: '0' }}>Project Director</p>
               </div>
 
             </div>
