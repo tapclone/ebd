@@ -86,7 +86,7 @@ function About() {
           <h1 style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>The Core of EBD group</h1> <br />
           <div style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'auto auto auto', columnGap: '10%', marginTop: '2rem' }}>
+          <div className='aboutCoreImages' style={{ display: 'grid', gridTemplateColumns: 'auto auto auto', columnGap: '10%', marginTop: '2rem' }}>
 
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'center', textAlign: 'center' }}>
               <img className='avatar' style={{ width: '10rem', border: '1px solid #0E8B8F', borderRadius: '100%' }} src={coreImage1} alt="" />

@@ -94,9 +94,9 @@
     .section1AbtUnderline{
         width: 5rem;
     }
-    .AboutCore{
+    /* .AboutCore{
         display: none !important;
-    }
+    } */
     .teamGrid{
         display: flex !important;
         overflow-x:scroll ;
@@ -125,4 +125,10 @@
     width: 100%;
     display: flex;
     margin-top: 2rem;
+}
+.aboutCoreImages{
+    overflow-x: scroll;
+}
+.aboutCoreImages::-webkit-scrollbar{
+    display: none;
 }
