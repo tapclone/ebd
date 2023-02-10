@@ -180,11 +180,9 @@ function Projects() {
           }}
         ></div>
 
-
         <div className="sliderContainer">
           <Slider {...settings}>
             {Design?.map((items) => {
-
               return (
                 <div className="cardMain1">
                   <div
@@ -196,7 +194,7 @@ function Projects() {
                     }}
                   >
                     <div className="card card1">
-                      <img src={items.Image[0]?.url} alt="" />
+                      <img src={items.cardImage[0].url} alt="" />
                       <p
                         style={{
                           margin: "0",
@@ -234,7 +232,7 @@ function Projects() {
                         {" "}
                         {items.Description.slice(0, 200)}{" "}
                       </p>
-                      
+
                       <span
                         className="readMore"
                         onClick={() => navigate(`/project/${items._id}`)}
@@ -249,7 +247,6 @@ function Projects() {
             })}
           </Slider>
         </div>
-
       </section>
 
       <section
@@ -285,7 +282,6 @@ function Projects() {
         <div className="sliderContainer">
           <Slider {...settings}>
             {Constructions?.map((items) => {
-              console.log(items, "dkvkjd");
               return (
                 <div className="cardMain1">
                   <div
@@ -297,7 +293,7 @@ function Projects() {
                     }}
                   >
                     <div className="card card1">
-                      <img src={items.Image[0]?.url} alt="" />
+                      <img src={items.cardImage[0].url} alt="" />
                       <p
                         style={{
                           margin: "0",
@@ -349,7 +345,6 @@ function Projects() {
             })}
           </Slider>
         </div>
-
       </section>
 
       <section
@@ -382,70 +377,70 @@ function Projects() {
           }}
         ></div>
         <div className="sliderContainer">
-        <Slider {...settings}>
-          {Builders?.map((items) => {
-            return (
-              <div className="cardMain1">
-                <div
-                  className="cardMain"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <div className="card card1">
-                    <img src={items.Image[0]?.url} alt="" />
-                    <p
-                      style={{
-                        margin: "0",
-                        fontWeight: "lighter",
-                        color: "white",
-                        textAlign: "center",
-                        fontSize: "0.8rem",
-                        marginTop: "10px",
-                      }}
-                    >
-                      {items.Name}
-                    </p>
-                    <div
-                      style={{
-                        background: "white",
-                        width: "3rem",
-                        height: "1px",
-                        marginTop: "4px",
-                      }}
-                    ></div>
-                  </div>
+          <Slider {...settings}>
+            {Builders?.map((items) => {
+              return (
+                <div className="cardMain1">
+                  <div
+                    className="cardMain"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <div className="card card1">
+                      <img src={items.cardImage[0].url} alt="" />
+                      <p
+                        style={{
+                          margin: "0",
+                          fontWeight: "lighter",
+                          color: "white",
+                          textAlign: "center",
+                          fontSize: "0.8rem",
+                          marginTop: "10px",
+                        }}
+                      >
+                        {items.Name}
+                      </p>
+                      <div
+                        style={{
+                          background: "white",
+                          width: "3rem",
+                          height: "1px",
+                          marginTop: "4px",
+                        }}
+                      ></div>
+                    </div>
 
-                  <div className="card card3">
-                    <p
-                      style={{
-                        maxWidth: "80%",
-                        textAlign: "justify",
-                        hyphens: "auto",
-                        marginTop: "30%",
-                        color: "white",
-                        fontWeight: "lighter",
-                        opacity: "0.8",
-                      }}
-                    >
-                      {" "}
-                      {items.Description.slice(0, 200)}{" "}
-                    </p>
-                    <span
-                      className="readMore"
-                      onClick={() => navigate(`/project/${items._id}`)}
-                      style={{ color: "white" }}
-                    >
-                      READ MORE
-                    </span>
+                    <div className="card card3">
+                      <p
+                        style={{
+                          maxWidth: "80%",
+                          textAlign: "justify",
+                          hyphens: "auto",
+                          marginTop: "30%",
+                          color: "white",
+                          fontWeight: "lighter",
+                          opacity: "0.8",
+                        }}
+                      >
+                        {" "}
+                        {items.Description.slice(0, 200)}{" "}
+                      </p>
+                      <span
+                        className="readMore"
+                        onClick={() => navigate(`/project/${items._id}`)}
+                        style={{ color: "white" }}
+                      >
+                        READ MORE
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </Slider>
+              );
+            })}
+          </Slider>
         </div>
       </section>
 

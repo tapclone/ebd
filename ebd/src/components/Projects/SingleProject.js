@@ -6,8 +6,8 @@ import image from "../../assets/Asset 4@300.png";
 import image2 from "../../assets/Asset 5@300.png";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import Slider from 'react-slick'
-import sliderImg from '../../assets/Asset 5@300.png'
+import Slider from "react-slick";
+import sliderImg from "../../assets/Asset 5@300.png";
 
 function SingleProject() {
   const params = useParams();
@@ -15,23 +15,24 @@ function SingleProject() {
   const [image, setImage] = useState([]);
   const [head, setHead] = useState([]);
   const [embedId, setembedId] = useState();
-  const [slider,setSlider]=useState(false)
+  const [slider, setSlider] = useState(false);
+  const [viewImage, setViewImage] = useState();
 
   useEffect(() => {
     (async function () {
       try {
         const { data } = await axios.get(
           `/api/admin/view-single-project/${params.id}`
-
         );
 
         setImage(data.Image);
-        console.log(data.Image.length)
-        if(data.Image.length>1){
-          setSlider(true)
+        console.log(data.Image.length);
+        if (data.Image.length > 1) {
+          setSlider(true);
         }
 
         setData(data);
+        setViewImage(data.Image[0].url);
         setembedId(data.Video);
       } catch (error) {
         console.log(error);
@@ -43,8 +44,7 @@ function SingleProject() {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1
-    ,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 650,
@@ -52,8 +52,7 @@ function SingleProject() {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          
-        }
+        },
       },
       {
         breakpoint: 550,
@@ -61,11 +60,11 @@ function SingleProject() {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          
-        }
-      }]
-  }
-  
+        },
+      },
+    ],
+  };
+
   return (
     <div>
       <Header></Header>
@@ -126,43 +125,58 @@ function SingleProject() {
         {/* {image.map((items) => {
           return <img src={image[1]?.url} className="imageSection"></img>;
         })} */}
-        {image[0] && <img src={image[1]?.url} className="imageSection" style={{mixBlendMode:'multiply'}}></img>}
+        {image[0] && (
+          <img
+            src={viewImage}
+            className="imageSection"
+            style={{ mixBlendMode: "multiply" }}
+          ></img>
+        )}
       </section>
-      {slider&&
-      <section className="singleProjectSlider" style={{aspectRatio:"1/0.2",display:'flex',alignItems:'center',justifyContent:'center',marginTop:'-5%'}}>
-      <div className="singleProjectSliderDiv" style={{background:'#0e8b8f',width:'65%',height:'100%',display:'flex',alignItems:'end',justifyContent:'center',paddingBottom:'2%'}}>
-        <div style={{width:'90%'}}>
-          <Slider {...settingss}>
-            
-            <div>
-            <img style={{width:'90%',border:'10px white solid'}} src={sliderImg} alt="" />
-            </div>   
-
-            <div>
-            <img style={{width:'90%',border:'10px white solid'}} src={sliderImg} alt="" />
-            </div>   
-
-            <div>
-            <img style={{width:'90%',border:'10px white solid'}} src={sliderImg} alt="" />
-            </div>   
-
-            <div>
-            <img style={{width:'90%',border:'10px white solid'}} src={sliderImg} alt="" />
-            </div>   
-
-            <div>
-            <img style={{width:'90%',border:'10px white solid'}} src={sliderImg} alt="" />
-            </div>   
-
-            <div>
-            <img style={{width:'90%',border:'10px white solid'}} src={sliderImg} alt="" />
-            </div>   
-          </Slider>
-        </div>
-      </div>
-    </section>
-      }
-      
+      {slider && (
+        <section
+          className="singleProjectSlider"
+          style={{
+            aspectRatio: "1/0.2",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginTop: "-5%",
+          }}
+        >
+          <div
+            className="singleProjectSliderDiv"
+            style={{
+              background: "#0e8b8f",
+              width: "65%",
+              height: "100%",
+              display: "flex",
+              alignItems: "end",
+              justifyContent: "center",
+              paddingBottom: "2%",
+            }}
+          >
+            <div style={{ width: "90%" }}>
+              <Slider {...settingss}>
+                {image.map((items) => {
+                  return (
+                    <div>
+                      <img
+                        onClick={(e) => {
+                          setViewImage(items.url);
+                        }}
+                        style={{ width: "90%", border: "10px white solid",cursor:"pointer" }}
+                        src={items.url}
+                        alt=""
+                      />
+                    </div>
+                  );
+                })}
+              </Slider>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section
         className="singleProjDetail"

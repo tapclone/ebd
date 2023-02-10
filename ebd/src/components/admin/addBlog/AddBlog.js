@@ -8,7 +8,7 @@ import "./AddBlog.css";
 function AddProject() {
   const [projectName, setProjectName] = useState();
   const [description, setDescription] = useState();
-  const [images, setImages] = useState();
+  const [images, setImages] = useState([]);
   const [imageLoading, setImageLoading] = useState(false);
   const [error, setError] = useState();
   const Navigate = useNavigate();
@@ -48,7 +48,7 @@ function AddProject() {
       Description: description,
       Image: images,
     };
-    if (projectName && description && images) {
+    if (projectName && description && images[1]) {
       try {
         const { data } = await axios.post("/api/admin/add-blog", obj);
         Navigate("/view-all-blog");
@@ -60,9 +60,9 @@ function AddProject() {
     }
   };
   return (
-    <div class="container ms-5" style={{marginTop:"5rem"}}>
+    <div class="container ms-5" style={{ marginTop: "5rem" }}>
       <form>
-        <div class="row" style={{marginLeft:"2rem"}}>
+        <div class="row" style={{ marginLeft: "2rem" }}>
           <h4>Heading</h4>
           <div class="input-group input-group-icon">
             <input
@@ -95,9 +95,19 @@ function AddProject() {
                 FileUploader(e);
               }}
               placeholder="Enter Feature Name"
-              
               multiple
             />
+            <ul type="circle">
+              <li>
+                <p>At least two image</p>
+              </li>
+              <li>
+                <p>First image for card</p>
+              </li>
+              <li>
+                <p>second image for single blog page</p>
+              </li>
+            </ul>
             <div class="input-icon">
               <i class="fa fa-key"></i>
             </div>
@@ -122,10 +132,16 @@ function AddProject() {
             />
           )}
           {images && (
-            <img
-              src={images.url}
-              style={{ width: "7rem", height: "7rem" }}
-            ></img>
+            <>
+              {images.map((items) => {
+                return (
+                  <img
+                    src={items.url}
+                    style={{ width: "7rem", height: "7rem" }}
+                  ></img>
+                );
+              })}
+            </>
           )}
         </div>
         {error && <div style={{ color: "red" }}>{error}</div>}

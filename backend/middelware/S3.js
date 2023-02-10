@@ -12,7 +12,7 @@ module.exports.uploadS3 = (fileData) => {
   SECRET_ACCESS_KEY=process.env.SECRET_ACCESS_KEY
   return new Promise((resovle, reject) => {
     const params = { 
-      Bucket:process.env.BUCKET,
+      Bucket:process.env.Bucket,
       Key: `${Date.now().toString()}.jpg`,
       Body: fileData,
     }
@@ -26,3 +26,4 @@ module.exports.uploadS3 = (fileData) => {
     });
   });
 };
+     

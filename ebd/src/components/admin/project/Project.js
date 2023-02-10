@@ -11,14 +11,10 @@ function Project() {
   const [open, setOpen] = useState(false);
   const [widgetLoading, setWidgetLoading] = useState(true);
   const [loading, setLoading] = useState(false);
-
   const [Project, setProject] = useState([]);
-
   const handleClose = () => setOpen(false);
   const adminToken = localStorage.getItem("adminToken");
   const Navigate = useNavigate();
-
-
 
   useEffect(() => {
     (async function () {
@@ -27,7 +23,7 @@ function Project() {
         setProject(res.data);
       });
     })();
-  }, [loading]);  
+  }, [loading]);
 
   const DeleteProject = async (id) => {
     swal({
@@ -73,7 +69,7 @@ function Project() {
   return (
     <div
       className="tableMain"
-      style={{ marginLeft: "5rem", marginTop: "4rem"}}
+      style={{ marginLeft: "5rem", marginTop: "4rem" }}
     >
       <button
         className="addBtn"
@@ -93,7 +89,7 @@ function Project() {
         ADD PROJECT
       </button>
       <div class="header_fixed ">
-        <table >
+        <table>
           <thead>
             <tr>
               <th>S No.</th>
@@ -105,12 +101,11 @@ function Project() {
           </thead>
           <tbody>
             {Project.map((items, index) => {
-              console.log(items);
               return (
                 <tr key={index}>
                   <td style={{ textAlign: "center" }}>{index + 1}</td>
                   <td style={{ textAlign: "center" }}>
-                    <img src={items?.Image[0].url} />
+                    <img src={items?.cardImage[0].url} />
                   </td>
                   <td style={{ textAlign: "center" }}>{items.Name}</td>
                   <td style={{ textAlign: "center" }}>{items.Category}</td>

@@ -1,38 +1,72 @@
-import React from 'react'
-import Footer from '../Footer/Footer'
-import EnquiryForm from '../Home/EnquiryForm'
-import Header from '../Home/Header'
-import avatar from '../../assets/Asset 1@300.png'
-import './About.css'
-import groupMobile from '../../assets/videos/EBD mobile gif.mp4'
-import group from '../../assets/videos/EBD intro.mp4'
-import GroupSection from '../Home/GroupSection'
-import coreImage1 from '../../assets/core-team/PNG1.png'
-import coreImage2 from '../../assets/core-team/PNG2.png'
-import coreImage3 from '../../assets/core-team/PNG3.png'
+import React from "react";
+import Footer from "../Footer/Footer";
+import EnquiryForm from "../Home/EnquiryForm";
+import Header from "../Home/Header";
+import avatar from "../../assets/Asset 1@300.png";
+import "./About.css";
+import groupMobile from "../../assets/videos/EBD mobile gif.mp4";
+import group from "../../assets/videos/EBD intro.mp4";
+import GroupSection from "../Home/GroupSection";
+import coreImage1 from "../../assets/core-team/PNG2.png";
+import coreImage3 from "../../assets/core-team/PNG1.png";
+import coreImage2 from "../../assets/core-team/PNG3.png";
 
 function About() {
   return (
-    <div style={{ width: '100%', overflowX: 'hidden' }}>
+    <div style={{ width: "100%", overflowX: "hidden" }}>
       <Header></Header>
 
       <GroupSection></GroupSection>
 
-      <section className='aboutSection' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', marginTop: '6rem', marginBottom: '5rem' }}>
-        <div className='section1Abt'>
-          <h1 className='section1AbtH1' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>About EBD Group</h1>
-          <h1 className='section1AbtH1Resp' style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>About Us</h1>
-          <div className='section1AbtUnderline' style={{ background: '#0E8B8F', height: '1px' }}></div>
-          <p style={{ textAlign: 'justify' }}>Estate Builders & Developers was launched at Calicut by the onset of the second millennium, as a contract construction company. With deep dedication & hard work of the team, it fixed firmly and settled well versed in the field. Quality, punctuality and the perfection in all the works lead to many major dignified projects, which in turn lead EBD to be upgraded as an architectural and developmental firm in the year 2019. It also came up with an extremely glorious project called EALA STAYS in the year 2020. It was a grand and major milestone in the history of EBD.
+      <section
+        className="aboutSection"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "100%",
+          marginTop: "6rem",
+          marginBottom: "5rem",
+        }}
+      >
+        <div className="section1Abt">
+          <h1
+            className="section1AbtH1"
+            style={{ margin: "0", fontWeight: "lighter", color: "#0E8B8F" }}
+          >
+            About EBD Group
+          </h1>
+          <h1
+            className="section1AbtH1Resp"
+            style={{ margin: "0", fontWeight: "lighter", color: "#0E8B8F" }}
+          >
+            About Us
+          </h1>
+          <div
+            className="section1AbtUnderline"
+            style={{ background: "#0E8B8F", height: "1px" }}
+          ></div>
+          <p style={{ textAlign: "justify" }}>
+            Estate Builders & Developers was launched at Calicut by the onset of
+            the second millennium, as a contract construction company. With deep
+            dedication & hard work of the team, it fixed firmly and settled well
+            versed in the field. Quality, punctuality and the perfection in all
+            the works lead to many major dignified projects, which in turn lead
+            EBD to be upgraded as an architectural and developmental firm in the
+            year 2019. It also came up with an extremely glorious project called
+            EALA STAYS in the year 2020. It was a grand and major milestone in
+            the history of EBD.
             <br />
-            <h2 style={{fontWeight: 'lighter', color: '#0E8B8F'}}>Architect/Project Associates.</h2>
-            We believe that tying up with partners of our same wavelength can help us make wonders.
-            EBD Group for architecture, planning and designing.
-            Possessing a vast experience of 20 years in the field, EBD showcases extravagant and highly appreciable works.
+            <h2 style={{ fontWeight: "lighter", color: "#0E8B8F" }}>
+              Architect/Project Associates.
+            </h2>
+            We believe that tying up with partners of our same wavelength can
+            help us make wonders. EBD Group for architecture, planning and
+            designing. Possessing a vast experience of 20 years in the field,
+            EBD showcases extravagant and highly appreciable works.
           </p>
         </div>
-
-      </section >
+      </section>
 
       {/* <section style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <div className='section2Abt' >
@@ -80,47 +114,126 @@ function About() {
 
       </section> */}
 
-
-      <section className='AboutCore' style={{ background: '#F3F9F9', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '5rem', padding: '3rem 0' }}>
-        <div className='aboutCoreSection1' style={{ width: '60%' }}>
-          <h1 style={{ margin: '0', fontWeight: 'lighter', color: '#0E8B8F' }}>The Core of EBD group</h1> <br />
-          <div style={{ background: '#0E8B8F', width: '3rem', height: '1px' }}></div>
-
-          <div className='aboutCoreImages' style={{ display: 'grid', gridTemplateColumns: 'auto auto auto', columnGap: '10%', marginTop: '2rem' }}>
-
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'center', textAlign: 'center' }}>
-              <img className='avatar' style={{ width: '10rem', border: '1px solid #0E8B8F', borderRadius: '100%' }} src={coreImage1} alt="" />
-              <div style={{ textAlign: 'center' }}>
-                <p style={{ marginBottom: '0', color: '#0E8B8F' }}>MUHAMMED SHIBILI</p>
-                <p style={{ marginTop: '0' }}>Managing Director</p>
+      <section
+        className="AboutCore"
+        style={{
+          background: "#F3F9F9",
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginTop: "5rem",
+          padding: "3rem 0",
+        }}
+      >
+        <div className="aboutCoreSection1" style={{ width: "60%" }}>
+          <h1 style={{ margin: "0", fontWeight: "lighter", color: "#0E8B8F" }}>
+            The Core of EBD group
+          </h1>{" "}
+          <br />
+          <div
+            style={{ background: "#0E8B8F", width: "3rem", height: "1px" }}
+          ></div>
+          <div
+            className="aboutCoreImages"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "auto auto auto",
+              columnGap: "10%",
+              marginTop: "2rem",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "start",
+                justifyContent: "center",
+                textAlign: "center",
+              }}
+            >
+              <img
+                className="avatar"
+                style={{
+                  width: "10rem",
+                  border: "1px solid #0E8B8F",
+                  borderRadius: "100%",
+                  backgroundColor: "white",
+                  aspectRatio: "1",
+                  objectFit: "cover",
+                }}
+                src={coreImage1}
+                alt=""
+              />
+              <div style={{ textAlign: "center" }}>
+                <p style={{ marginBottom: "0", color: "#0E8B8F" }}>
+                  MUHAMMED SHIBILI
+                </p>
+                <p style={{ marginTop: "0" }}>Managing Director</p>
               </div>
-
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'center', textAlign: 'center' }}>
-              <img className='avatar' style={{ width: '10rem', border: '1px solid #0E8B8F', borderRadius: '100%'}} src={coreImage2} alt="" />
-              <div style={{ textAlign: 'center' }}>
-                <p style={{ marginBottom: '0', color: '#0E8B8F' }}>FAZIL AHAMMED</p>
-                <p style={{ marginTop: '0' }}>Design Director</p>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "start",
+                justifyContent: "center",
+                textAlign: "center",
+              }}
+            >
+              <img
+                className="avatar"
+                style={{
+                  width: "10rem",
+                  border: "1px solid #0E8B8F",
+                  borderRadius: "100%",
+                  backgroundColor: "white",
+                  aspectRatio: "1",
+                  objectFit: "cover",
+                }}
+                src={coreImage2}
+                alt=""
+              />
+              <div style={{ textAlign: "center" }}>
+                <p style={{ marginBottom: "0", color: "#0E8B8F",marginLeft:"1rem" }}>
+                  FAZIL AHAMMED
+                </p>
+                <p style={{ marginTop: "0",marginLeft:"1rem"  }}>Design Director</p>
               </div>
-
             </div>
 
-
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'center', textAlign: 'center' }}>
-              <img className='avatar' style={{ width: '10rem', border: '1px solid #0E8B8F', borderRadius: '100%' }} src={coreImage3} alt="" />
-              <div style={{ textAlign: 'center' }}>
-                <p style={{ marginBottom: '0', color: '#0E8B8F' }}>MUHAMMED HASHIM</p>
-                <p style={{ marginTop: '0' }}>Project Director</p>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "start",
+                justifyContent: "center",
+                textAlign: "center",
+              }}
+            >
+              <img
+                className="avatar"
+                style={{
+                  width: "10rem",
+                  border: "1px solid #0E8B8F",
+                  borderRadius: "100%",
+                  backgroundColor: "white",
+                  aspectRatio: "1",
+                  objectFit: "cover",
+                }}
+                src={coreImage3}
+                alt=""
+              />
+              <div style={{ textAlign: "center" }}>
+                <p style={{ marginBottom: "0", color: "#0E8B8F",marginLeft:"1rem"  }}>
+                  MUHAMMED HASHIM
+                </p>
+                <p style={{ marginTop: "0" ,marginLeft:"1rem" }}>Project Director</p>
               </div>
-
             </div>
-
           </div>
         </div>
-
-
-
       </section>
 
       {/* <section style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '5rem', padding: '0rem 0px 3rem' }}>
@@ -194,9 +307,8 @@ function About() {
 
       <EnquiryForm></EnquiryForm>
       <Footer></Footer>
-
     </div>
-  )
+  );
 }
 
-export default About
+export default About;

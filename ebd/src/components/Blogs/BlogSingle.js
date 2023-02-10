@@ -32,7 +32,7 @@ function BlogSingle() {
     return (
         <div>
             <section style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column',marginTop:"5rem" }}>
-                <p style={{ textAlign: 'center' }}>Blog > <span style={{color:'#0E8B8F'}}>{blog?.Name}</span></p>
+                <p style={{ textAlign: 'center' }}>Blog <span style={{color:'#0E8B8F'}}>{blog?.Name}</span></p>
                 <div className='blogSectionS'>
                     <h2 style={{ color: '#0E8B8F', fontWeight: 'normal' }}>{blog?.Name}</h2>
                     <p style={{margin:'0',textAlign:'justify'}}>{blog?.Description}</p>

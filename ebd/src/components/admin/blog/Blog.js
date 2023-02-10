@@ -7,6 +7,7 @@ import swal from "sweetalert";
 import DeleteIcon from "@mui/icons-material/Delete";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+
 function Project() {
   const [loading, setLoading] = useState(false);
   const [Project, setProject] = useState([]);
