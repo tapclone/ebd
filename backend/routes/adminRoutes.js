@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { verifyToken } = require("../middelware/jwtToken");
+
 const {
   Login,
   AddBlog,
@@ -11,9 +12,10 @@ const {
   ViewAllProject,
   UploadImage,
   ViewSingleProject,
-  ViewSingleBlog
+  ViewSingleBlog,
+  EditBlog,
+  EditProject
 } = require("../controls/adminControls");
-
 router.route("/login").post(Login);
 router.route("/add-blog").post(AddBlog);
 router.route("/delete-blog/:id").delete(DeleteBlog);
@@ -24,5 +26,6 @@ router.route("/view-all-project").get(ViewAllProject);
 router.route("/view-single-project/:id").get(ViewSingleProject)
 router.route("/view-single-blog/:id").get(ViewSingleBlog)
 router.route("/image-uploading").post(UploadImage)
-
+router.route("/edit-blog").post(EditBlog)
+router.route("/edit-projects").post(EditProject)
 module.exports = router;

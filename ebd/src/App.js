@@ -11,11 +11,13 @@ import BuildersPage from './Pages/BuildersPage'
 import DesignHousePage from './Pages/DesignHousePage'
 import ConstructionsPage from './Pages/ConstructionsPage'
 import BlogSinglePage from './Pages/BlogSinglePage'
+import EditProject from './Pages/admin/EditProjects'
 import AdminLogin from "./Pages/admin/Login";
 import Home from "./Pages/admin/Home";
 import Project from "./Pages/admin/Project";
 import AddProject from "./Pages/admin/AddProject";
 import Blog from "./Pages/admin/Blog";
+import EditBlog from "./Pages/admin/EditBlogPage"
 import AddBlogpage from "./Pages/admin/AddBlog";
 import SingleBlogPage from "./Pages/BlogSinglePage"
 
@@ -50,6 +52,8 @@ function App() {
           <Route exact path="/add-project" element={<AddProject />}></Route>
           <Route exact path="/view-all-blog" element={<Blog />}></Route>
           <Route exact path="/Add-Blog" element={<AddBlogpage/>}></Route>
+          <Route exact path="/edit-blog" element={<EditBlog/>}></Route>
+          <Route exact path="/edit-project" element={<EditProject/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

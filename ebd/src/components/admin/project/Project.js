@@ -19,7 +19,6 @@ function Project() {
   useEffect(() => {
     (async function () {
       await axios.get("/api/admin/view-all-project").then((res) => {
-        console.log(res.data);
         setProject(res.data);
       });
     })();
@@ -117,6 +116,15 @@ function Project() {
                       }}
                     >
                       Delete
+                    </button>
+                    <button
+                      onClick={(e) => {
+                       Navigate("/edit-project",{state:{
+                        item:items
+                       }})
+                      }}
+                    >
+                      Edit
                     </button>
                   </td>
                 </tr>

@@ -161,6 +161,30 @@ const ViewSingleBlog = asyncHandler(async (req, res) => {
     res.status(400).json("Something Went Wrong");
   }
 });
+const EditBlog=asyncHandler(async(req,res)=>{
+  const {id,Name,Description,Image}=req.body
+  const updated=await db.get().collection(collection.BLOG_COLLECTION).updateOne({
+    _id:ObjectId(id)
+  },{$set:{Name:Name,Description:Description,Image:Image}})
+  console.log(updated);
+  if(updated){
+    res.status(200).json("Success")
+  }else{
+    res.status(400).json("Something Went Wrong");
+  }
+
+})
+const EditProject=asyncHandler(async(req,res)=>{
+  const {id,Name,Description,Image,Category,Video,cardImage,MoreFeature,Feature}=req.body
+  const updated=await db.get().collection(collection.PROJECT_COLLECTION).updateOne({
+    _id:ObjectId(id)
+  },{$set:{Name:Name,Description:Description,Image:Image,Category:Category,Video:Video,cardImage:cardImage,MoreFeature:MoreFeature,Feature:Feature}})
+  if(updated){
+    res.status(200).json("Success")
+  }else{
+    res.status(400).json("Something Went Wrong");
+  }
+})
 module.exports = {
   Login,
   AddBlog,
@@ -172,4 +196,6 @@ module.exports = {
   UploadImage,
   ViewSingleProject,
   ViewSingleBlog,
+  EditBlog,
+  EditProject
 };
