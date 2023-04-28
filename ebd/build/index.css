@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Acumin';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../src/fonts/FontsFree-Net-Acumin-Pro-Book.ttf');
+    }
+body{
+    font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
+}
+p,span{
+    font-weight: lighter !important;
+    color: rgb(27, 27, 27);
+
+}
+p{
+    text-align: justify;
+    hyphens: auto;
+}

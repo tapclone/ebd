@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e55a66e5.css",
+    "main.js": "/static/js/main.3bfd10bf.js",
+    "static/media/Compass.mp4": "/static/media/Compass.dff43761285e6163de77.mp4",
+    "static/media/EBD intro.mp4": "/static/media/EBD intro.35ee69ad645f1ec97b92.mp4",
+    "static/media/EBD mobile gif.mp4": "/static/media/EBD mobile gif.ce95aacea7cba3f056f0.mp4",
+    "static/media/protractor.mp4": "/static/media/protractor.ad8859ca5a9fb5922bb6.mp4",
+    "static/media/set square 2.mp4": "/static/media/set square 2.6038835aba4d29074ca8.mp4",
+    "static/media/set square.mp4": "/static/media/set square.c593fa1af172579d5b8b.mp4",
+    "static/media/divider.mp4": "/static/media/divider.bc1a6c30639eb3c117d1.mp4",
+    "static/media/ebd pencil.mp4": "/static/media/ebd pencil.1048ead03c0121cdf4e5.mp4",
+    "static/media/Asset 4@300.png": "/static/media/Asset 4@300.869b5f36b589c2c14fc7.png",
+    "static/media/ebd survey cam.mp4": "/static/media/ebd survey cam.04c1508487d18017cc81.mp4",
+    "static/media/Asset 5@300.png": "/static/media/Asset 5@300.cda616625aa85f03818a.png",
+    "static/media/ebd pc.mp4": "/static/media/ebd pc.34a1bf6959c59a6bbf99.mp4",
+    "static/media/PNG3.png": "/static/media/PNG3.64dddcb2645eef0b6618.png",
+    "static/media/PNG2.png": "/static/media/PNG2.b8ae5aceb2a8926d06e4.png",
+    "static/media/PNG1.png": "/static/media/PNG1.52f46e0daba717e32d51.png",
+    "static/media/Asset 3@300.png": "/static/media/Asset 3@300.133a923f3e0490460a3b.png",
+    "static/media/Asset 1@300.png": "/static/media/Asset 1@300.e83382d419a804006231.png",
+    "static/media/logo.svg": "/static/media/logo.8de98b2de2f0c844533d6f3c6c449ffa.svg",
+    "static/media/btnLogo.svg": "/static/media/btnLogo.fd5da705fb698417c9bd922091cc9507.svg",
+    "index.html": "/index.html",
+    "static/media/close.svg": "/static/media/close.136b5df2403524b4d3406a68ad50775e.svg",
+    "static/media/hamburger.svg": "/static/media/hamburger.653df31f762831b2904aaa9e787a85ee.svg",
+    "static/media/arrow2.svg": "/static/media/arrow2.b0407a8c88a87f67f5e1d6a6a54193ec.svg",
+    "static/media/arrow1.svg": "/static/media/arrow1.dba5d8033f1161af817f08428ee0b6b4.svg",
+    "main.e55a66e5.css.map": "/static/css/main.e55a66e5.css.map",
+    "main.3bfd10bf.js.map": "/static/js/main.3bfd10bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e55a66e5.css",
+    "static/js/main.3bfd10bf.js"
+  ]
+}
