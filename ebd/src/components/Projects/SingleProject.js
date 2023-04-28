@@ -17,6 +17,12 @@ function SingleProject() {
   const [embedId, setembedId] = useState();
   const [slider, setSlider] = useState(false);
   const [viewImage, setViewImage] = useState();
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [
+    'https://ebdbucket.s3.ap-northeast-1.amazonaws.com/1675764093167.jpg',
+    'https://ebdbucket.s3.ap-northeast-1.amazonaws.com/1675764104853.jpg',
+    'https://ebdbucket.s3.ap-northeast-1.amazonaws.com/1675764093167.jpg',
+  ];
 
   useEffect(() => {
     (async function () {
@@ -26,7 +32,6 @@ function SingleProject() {
         );
 
         setImage(data.Image);
-        console.log(data.Image.length);
         if (data.Image.length > 1) {
           setSlider(true);
         }
@@ -39,15 +44,29 @@ function SingleProject() {
       }
     })();
   }, []);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if(currentImage<image.length-1){
+      setCurrentImage((currentImage + 1));
+      }else{
+        setCurrentImage(1)
+      }
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, [currentImage]);
+ 
+  const currentImageUrl = image[currentImage]?.url;
   const settingss = {
     dots: false,
     infinite: true,
-    speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    pauseOnHover: false,
+    speed: 5000,
+    autoplay: true,
     responsive: [
       {
-        breakpoint: 650,
+        breakpoint: 650, 
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -127,9 +146,10 @@ function SingleProject() {
         })} */}
         {image[0] && (
           <img
-            src={viewImage}
+          
+            src={currentImageUrl}
             className="imageSection"
-            style={{ mixBlendMode: "multiply" }}
+            style={{ mixBlendMode: "multiply",transition:" 0.5s ease-in-out" }}
           ></img>
         )}
       </section>
@@ -158,12 +178,12 @@ function SingleProject() {
           >
             <div style={{ width: "90%" }}>
               <Slider {...settingss}>
-                {image.map((items) => {
+                {image.map((items,index) => {
                   return (
                     <div>
                       <img
                         onClick={(e) => {
-                          setViewImage(items.url);
+                          setCurrentImage(index)
                         }}
                         style={{ width: "90%", border: "10px white solid",cursor:"pointer" }}
                         src={items.url}
