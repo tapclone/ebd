@@ -27,7 +27,7 @@ function Builders() {
         <div>
             <section className='projSec' style={{ marginTop: '8rem', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                 <div className='constructionH1'>
-                    <h1 style={{ margin: '0', fontWeight: '500', color: '#0E8B8F', textAlign: 'center', fontSize: '1.2rem' }}>EBD Developers</h1>
+                    <h1 style={{ margin: '0', fontWeight: '500', color: '#0E8B8F', textAlign: 'center', fontSize: '1.2rem' }}>EBD Builders</h1>
                 </div>
                 <div className='constructionSection'>
                     <div className="imgSec">
