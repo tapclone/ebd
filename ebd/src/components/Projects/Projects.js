@@ -184,7 +184,7 @@ function Projects() {
           <Slider {...settings}>
             {Design?.map((items) => {
               return (
-                <div className="cardMain1" style={{marginTop:"2rem"}}>
+                <div className="cardMain1">
                   <div
                     className="cardMain"
                     style={{
@@ -283,7 +283,7 @@ function Projects() {
           <Slider {...settings}>
             {Constructions?.map((items) => {
               return (
-                <div className="cardMain1" style={{marginTop:"2rem"}}>
+                <div className="cardMain1">
                   <div
                     className="cardMain"
                     style={{
@@ -380,7 +380,7 @@ function Projects() {
           <Slider {...settings}>
             {Builders?.map((items) => {
               return (
-                <div className="cardMain1" style={{marginTop:"2rem"}}>
+                <div className="cardMain1">
                   <div
                     className="cardMain"
                     style={{

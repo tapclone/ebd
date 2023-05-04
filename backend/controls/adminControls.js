@@ -23,14 +23,19 @@ function verifyToken(req, res, next) {
     }
   });
 }
+const generateToken = (id) => {
+  return jwt.sign({ id }, "asif", {
+    expiresIn: "30d",
+  });
+};
 
 const Login = asyncHandler(async (req, res) => {
   const { username, password } = req.body;
   if (username == "ebd@gmail.com" && password == "password") {
-    const token = verifyToken(password);
+    const token = generateToken(password);
     res.status(200).json(token);
   } else {
-    res.status(401).json("Invalid Details");
+    res.status(401).json("Invalid Details"); 
   }
 });
 
