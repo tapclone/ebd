@@ -6,7 +6,7 @@ const { ObjectId } = require("mongodb");
 const { PROJECT_COLLECTION } = require("../config/collection");
 const { BLOG_COLLECTION } = require("../config/collection");
 const { uploadS3 } = require("../middelware/S3");
-const Jwt = require("jsonwebtoken");
+const jwt = require("jsonwebtoken");
 
 function verifyToken(req, res, next) {
   let authHeader = req.headers["auth-token"];
@@ -14,7 +14,7 @@ function verifyToken(req, res, next) {
     res.status(401).send({ erorr: "no token provided" });
   }
   let token = authHeader;
-  Jwt.verify(token,"asif", (err, res) => {
+  jwt.verify(token,"asif", (err, res) => {
     if (err) {
       console.log("Unautherized");
       //  res.status(500).send("Authentication Failed")
