@@ -6,25 +6,28 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 function AddProject() {
     const location = useLocation();
-    const [featureName, setFeatureName] = useState(location.state.item.Feature[0].Name);
-    const [featureValue, setFeatureValue] = useState(location.state.item.Feature[0].Value);
-    const [moreFeatureName, setMoreFeatureName] = useState(location.state.item.MoreFeature[0].Name);
-    const [projectName, setProjectName] = useState(location.state.item.Name);
-    const [description, setDescription] = useState(location.state.item.Description);
-    const [images, setImages] = useState(location.state.item.Image);
+    console.log(location,"Ckd");
+    const [featureName, setFeatureName] = useState(location?.state?.item?.Feature[0]?.Name);
+    const [featureValue, setFeatureValue] = useState(location?.state?.item?.Feature[0]?.Value);
+    const [moreFeatureName, setMoreFeatureName] = useState(location?.state?.item?.MoreFeature[0]?.Name);
+    const [projectName, setProjectName] = useState(location?.state?.item?.Name);
+    const [description, setDescription] = useState(location?.state?.item?.Description);
+    const [images, setImages] = useState(location?.state?.item?.Image);
     const [feature, setFeature] = useState([]);
     const [moreFeature, setMoreFeature] = useState([]);
     const [error, setError] = useState();
-    const [video, setVideo] = useState(location.state.item.Video);
-    const [category, setCategory] = useState(location.state.item.Category);
+    const [video, setVideo] = useState(location?.state?.item?.Video);
+    const [category, setCategory] = useState(location?.state?.item?.Category);
     const [imageLoading, setImageLoading] = useState(false);
-    const [cardImages, setCardImage] = useState(location.state.item.cardImage);
-    const [totalfetures, setTotalfetures] = useState(location.state.item.Feature);
-    const [totalmorefeturs, setTotalMorefetures] = useState(location.state.item.MoreFeature);
+    const [cardImages, setCardImage] = useState(location?.state?.item?.cardImage);
+    const [totalfetures, setTotalfetures] = useState(location?.state?.item?.Feature);
+    const [totalmorefeturs, setTotalMorefetures] = useState(location?.state?.item?.MoreFeature);
     const [cardImagesLoading, setCartImagesLoading] = useState(false);
     const Navigate = useNavigate();
 
+
     const AddFeature = () => {
+    
         if (featureName && featureValue) {
             const obj = {
                 Name: featureName,
@@ -193,7 +196,7 @@ function AddProject() {
                     <div class="input-group input-group-icon">
                         <input
                             type="text"
-                            value={featureName}
+                            defaultValue={featureName}
                             onChange={(e) => {
                                 setFeatureName(e.target.value);
                             }}
