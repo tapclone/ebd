@@ -365,7 +365,7 @@ function Projects() {
             textAlign: "center",
           }}
         >
-          EBD Developers
+          EBD Builders
         </h1>
         <div
           style={{
